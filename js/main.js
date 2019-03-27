@@ -202,7 +202,11 @@
 
 	};
 
-
+	/*Javascript for the tab selection in projects
+		* color 1 (light blue) - hackathons
+		* color 2 (purple) - personal
+		* color 5 (turqoise green) - leadership/stuff
+	*/
 
 
 
