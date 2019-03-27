@@ -80,7 +80,6 @@ figure {
   position: fixed;
   left:0px;
   top: 0px;
-  overflow-y: scroll;
   z-index: 1001;
   background: #f2f3f7;
   -webkit-transition: 0.5s;
@@ -237,7 +236,6 @@ figure {
   background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
-  margin-bottom: 10em;
   clear: both; }
   #colorlib-hero .flexslider {
     border: none;
@@ -295,7 +293,7 @@ figure {
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
           padding: 0;
-          color: black;
+          color: white;
           font-family: "Playfair Display", Georgia, serif; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
@@ -334,12 +332,12 @@ figure {
           border: none;
           font-weight: 400; }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
-            color: #000;
-            border: 1px solid #000;
+            color: white;
+            border: 1px solid white;
             background: transparent !important; }
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
               background: transparent !important;
-              border: 1px solid #000 !important; }
+              border: 1px solid #5e66a3 !important; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn {
               width: 100%; } }
@@ -382,8 +380,8 @@ body.offcanvas {
 .colorlib-about,
 .colorlib-services,
 .colorlib-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
+  padding-top: 1em;
+  padding-bottom: 4em;
   clear: both;
   width: 100%;
   display: block; }
