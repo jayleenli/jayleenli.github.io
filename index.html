@@ -63,19 +63,19 @@
 			<nav id="colorlib-main-menu" role="navigation" class="navbar">
 				<div id="navbar" class="collapse">
 					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li class="active"><a href="#" data-nav-section="home" style="font-size: 16px;">Home</a></li>
 						<!--li><a href="#" data-nav-section="about">About</a></li-->
 						<!--li><a href="#" data-nav-section="skills">Skills</a></li-->
 						<!--li><a href="#" data-nav-section="education">Education</a></li-->
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="work">Projects</a></li>
-						<li><a href="#" data-nav-section="services">Services</a></li>
+						<li><a href="#" data-nav-section="experience" style="font-size: 16px;">Experience</a></li>
+						<li><a href="#" data-nav-section="work" style="font-size: 16px;">Projects</a></li>
+						<!--li><a href="#" data-nav-section="services">Services</a></li-->
 					</ul>
 				</div>
 			</nav>
 
 			<div class="colorlib-footer">
-				<p><small><span>Email: <a>jayleenli17@gmail.com</a></span></small></p>
+				<p><small><span style="font-size: 14px;">Email: <a>jayleenli17@gmail.com</a></span></small></p>
 				<ul>
 					<li><a href="https://github.com/jayleenli" target="_blank"><i class="icon-github"></i></a></li>
 					<li><a href="https://www.linkedin.com/in/jayleen-li/" target="_blank"><i class="icon-linkedin2"></i></a></li>
@@ -172,7 +172,7 @@
 							<span class="colorlib-counter-label">Hackathons</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="4000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="19" data-speed="4000" data-refresh-interval="50"></span>
 							<span class="colorlib-counter-label">Projects</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
@@ -455,30 +455,32 @@
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 							<span class="heading-meta">My Projects</span>
-							<h2 class="colorlib-heading animate-box">Recent Projects</h2>
+							<h2 class="colorlib-heading animate-box">Featured Projects</h2>
 						</div>
 					</div>
 					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
 						<div class="col-md-12">
 							<p class="work-menu">
-								<span><a href="#" class="active">Recent</a></span>
-								<span><a href="#">Hackathons</a></span>
-								<span><a href="#">Leadership/Affliations</a></span>
-								<span><a href="#">Personal</a></span></p>
+								<span><a id="tab-recent" onclick="makeActive1()" class="active" style="cursor: pointer">Recent</a></span>
+								<span><a id="tab-hackathons" onclick="makeActive2()" style="cursor: pointer">Hackathons</a></span>
+								<span><a id="tab-leadership" onclick="makeActive3()" style="cursor: pointer">Leadership/Affliations</a></span>
+								<span><a id="tab-personal" onclick="makeActive4()" style="cursor: pointer">Personal</a></span></p>
 						</div>
 					</div>
-					<div class="row">
 
-						<div class="col-md-5 animate-box" data-animate-effect="fadeInLeft">
+			<!--------------------------SHOWCASE RECENT ROW BEGIN ---------------------------->
+					<div id="showcase-recent" class="row showcase-show">
+
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
 							<div class="services color-1">
 								<div class="blog-entry">
-									<a href="https://jayleenli.github.io/type-type-revolution/" target="_blank" class="blog-img"><img src="images/ttr.JPG" class="img-responsive" alt="type-type-revolution screenshot"></a>
+									<a href="https://jayleenli.github.io/type-type-revolution/" target="_blank" class="blog-img"><img src="images/ttr.JPG" class="img-responsive" alt="Type-Type-Revolution screenshot"></a>
 									<div class="desc">
 										<center>
 											<h3><a href="https://jayleenli.github.io/type-type-revolution/" target="_blank">Type-Type-Revolution</a></h3>
 											<h4>SLO-Hacks 2019</h4>
 										</center>
-										<p>Online web-based Multiplayer typing race game made at SLO HACKS 2019 using Javascript and Firebase. Awards: Best Game/Game Design and Best Domain Name.</p>
+										<p>Online web-based Multiplayer typing race game made at SLO HACKS 2019 using Javascript and Firebase. <br/> Awards: Best Game/Game Design and Best Domain Name.</p>
 										<span>
 											<small><a class="btn btn-project-link" href="https://github.com/jayleenli/type-type-revolution" target="_blank">Github </a>
 											<a class="btn btn-project-link" href="https://devpost.com/software/type-type-revolution" target="_blank">Devpost </a>
@@ -490,16 +492,292 @@
 							</div>
 						</div>
 
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-1">
+								<div class="blog-entry">
+									<a href="https://github.com/jayleenli/Genre-ator" target="_blank" class="blog-img"><img src="images/genreator.JPG" class="img-responsive" alt="Genre-ator screenshot"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://github.com/jayleenli/Genre-ator" target="_blank">Genre-ator</a></h3>
+											<h4>SB-Hacks 2019</h4>
+										</center>
+										<p>A research-oriented Machine Learning platform for Genre to Genre Conversion for Music created for SB Hacks V.
+										</p>
+										<span>
+											<small><a class="btn btn-project-link" href="https://github.com/jayleenli/Genre-ator" target="_blank">Github </a>
+											<a class="btn btn-project-link" href="https://devpost.com/software/genre-ator" target="_blank">Devpost </a>
+											</small>
+										<small style="float:right;margin-top: 18px;">Jan 2019</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+			<!--------------------------SHOWCASE RECENT ROW END ---------------------------->
+
+			<!--------------------------SHOWCASE HACKATHONS ROW BEGIN ---------------------------->
+					<div id="showcase-hackathons" class="row showcase-hide">
+
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-1">
+								<div class="blog-entry">
+									<a href="https://jayleenli.github.io/type-type-revolution/" target="_blank" class="blog-img"><img src="images/ttr.JPG" class="img-responsive" alt="Type-Type-Revolution screenshot"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://jayleenli.github.io/type-type-revolution/" target="_blank">Type-Type-Revolution</a></h3>
+											<h4>SLO-Hacks 2019</h4>
+										</center>
+										<p>Online web-based Multiplayer typing race game made at SLO HACKS 2019 using Javascript and Firebase. <br/> Awards: Best Game/Game Design and Best Domain Name.</p>
+										<span>
+											<small><a class="btn btn-project-link" href="https://github.com/jayleenli/type-type-revolution" target="_blank">Github </a>
+											<a class="btn btn-project-link" href="https://devpost.com/software/type-type-revolution" target="_blank">Devpost </a>
+											</small>
+										<small style="float:right;margin-top: 18px;">Feb 2019</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
 						
-					<div class="row">
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-1">
+								<div class="blog-entry">
+									<a href="https://github.com/jayleenli/Genre-ator" target="_blank" class="blog-img"><img src="images/genreator.JPG" class="img-responsive" alt="Genre-ator screenshot"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://github.com/jayleenli/Genre-ator" target="_blank">Genre-ator</a></h3>
+											<h4>SB-Hacks 2019</h4>
+										</center>
+										<p>A research-oriented Machine Learning platform for Genre to Genre Conversion for Music created for SB Hacks V.
+										</p>
+										<span>
+											<small><a class="btn btn-project-link" href="https://github.com/jayleenli/Genre-ator" target="_blank">Github </a>
+											<a class="btn btn-project-link" href="https://devpost.com/software/genre-ator" target="_blank">Devpost </a>
+											</small>
+										<small style="float:right;margin-top: 18px;">Jan 2019</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-1">
+								<div class="blog-entry">
+									<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=799126574" target="_blank" class="blog-img"><img src="images/hssgame.png" class="img-responsive" alt="High School Shenanigans screenshot"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=799126574" target="_blank">High School Shenanigans</a></h3>
+											<h4>CodeDay Dallas</h4>
+										</center>
+										<p>A game created in GameMaker Studio about the struggles experienced in high school in the style of a top down ship shooter game. Won 1st place overall.
+										</p>
+										<span>
+											<small><a class="btn btn-project-link" href="https://github.com/jayleenli/High-School-Shenanigans" target="_blank">Github </a>
+											</small>
+										<small style="float:right;margin-top: 18px;">Nov 2016</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+			<!--------------------------SHOWCASE HACKATHONS ROW END ---------------------------->
+
+			<!--------------------------SHOWCASE LEADERSHIP/AFFLIATIONS ROW BEGIN ---------------------------->
+					<div id="showcase-leadership" class="row showcase-hide">
+
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-5">
+								<div class="blog-entry">
+									<a href="http://saseucsb.com" target="_blank" class="blog-img"><img src="images/sase-logo.png" class="img-responsive" alt="saseucsb.com screenshot"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="http://saseucsb.com" target="_blank">Society of Asian Scientists and Engineers (SASE)</a></h3>
+											<h4>Webmaster Chair and Programming Committee Member (Oct 2017- Jun 2018)</h4>
+										</center>
+										<p> Webmaster chair for SASE’s website (<a href="http://saseucsb.com" target="_blank">saseucsb.com</a>) and member of the programming committee that organized the 2018 SASE Regional West conference which hosted 200+ university students. Programmed the website in HTML5, CSS, and Javascript. 
+										</p>
+										<span>
+										<small style="float:right;margin-top: -6px;">Sep 2017 - Present</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="services color-5">
+								<div class="blog-entry">
+									<a href="https://girlsincsb.org/" target="_blank" class="blog-img"><img src="images/girlsincSB.jpg" class="img-responsive" alt="girls inc at SB"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://girlsincsb.org/" target="_blank">Girls Inc. of Greater Santa Barbara</a></h3>
+											<h4>Science Club Volunteer Instructor</h4>
+										</center>
+										<p>Taught elementary school girls weekly scientific projects at Girls Inc. to encourage and inspire young women to pursue their interests in STEM. In partnership with SWE@UCSB.
+										</p>
+										<span>
+										<small style="float:right;margin-top: -6px;">Feb 2019 – Present</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-5">
+								<div class="blog-entry">
+									<a href="https://wiredhacks.github.io/" target="_blank" class="blog-img"><img src="images/WHLongLogo.png" class="img-responsive" alt="Wired hacks screenshot"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://wiredhacks.github.io/" target="_blank">Wired Hacks</a></h3>
+											<h4>Organizer and Web Developer</h4>
+										</center>
+										<p>Founding team member to host the first-ever hardware hackathon at UCSB, Wired Hacks, hosted by Theta Tau and the Institute of Electrical and Electronics Engineers (IEEE). Created the webpage (<a href="https://wiredhacks.github.io/" target="_blank">wiredhackssb.com</a>) to connect and inform students about Wired Hacks. 
+										</p>
+										<span>
+										<small style="float:right;margin-top: -6px;">Dec 2017 – Feb 2018</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="services color-5">
+								<div class="blog-entry">
+									<a href="https://www.womxnhacks.com/" target="_blank" class="blog-img"><img src="images/womxnhacks.png" class="img-responsive" alt="womxn hacks"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://www.womxnhacks.com/" target="_blank">Womxn/Hacks</a></h3>
+											<h4>Mentor</h4>
+										</center>
+										<p>Mentored participating hackers in Git, UNIX, and web technologies at UCSB's all female-identifying hackathon, Womxn Hacks.
+										</p>
+										<span>
+										<small style="float:right;margin-top: -6px;">Jan 2019</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-5">
+								<div class="blog-entry">
+									<a href="http://societyofwomenengineers.swe.org/" target="_blank" class="blog-img"><img src="images/swe.png" class="img-responsive" alt="SWE logo"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="http://societyofwomenengineers.swe.org/" target="_blank">Society of Women Engineers</a></h3>
+											<h4>Industry Committee Member (Nov 2017- Feb 2018)</h4>
+										</center>
+										<p>Part of the committee that hosts Evening with Industry, a paneling event for engineering companies. Currently volunteering at SWE events.
+										</p>
+										<span>
+										<small style="float:right;margin-top: -6px;">Sep 2017 – Present</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="services color-5">
+								<div class="blog-entry">
+									<a href="https://www.perotmuseum.org/" target="_blank" class="blog-img"><img src="images/perot.png" class="img-responsive" alt="perot museum logo"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://www.perotmuseum.org/" target="_blank">Perot Museum</a></h3>
+											<h4>Exhibit Technology Assistant</h4>
+										</center>
+										<p>Informed visitors about science and engineering exhibits of the museum and was responsible managing the equipment in exhibit halls.
+										</p>
+										<span>
+										<small style="float:right;margin-top: -6px;">May 2013 – Jun 2017</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+			<!--------------------------SHOWCASE LEADERSHIP/AFFLIATIONS ROW END ---------------------------->
+
+			<!--------------------------SHOWCASE PERSONAL PROJECTS ROW BEGIN ---------------------------->
+					<div id="showcase-personal" class="row showcase-hide">
+
+					<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-4">
+								<div class="blog-entry">
+									<a href="https://chrome.google.com/webstore/detail/steam-activity-filter/dnhaemngbanccjamofoeokgpadfegjcf" target="_blank" class="blog-img"><img src="images/saf.JPG" class="img-responsive" alt="Steam Activty Filter screenshot"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://chrome.google.com/webstore/detail/steam-activity-filter/dnhaemngbanccjamofoeokgpadfegjcf" target="_blank">Steam Activity Filter</a></h3>
+											<h4>A Google Chrome Extension</h4>
+										</center>
+										<p> A Chrome Extension published onto the Chrome Web Store that allows users to personalize their “Social Activity” webpage on the popular gaming platform Steam. The extension was created with JSON, JavaScript, HTML, and CSS. 
+										</p>
+										<span>
+											<small><a class="btn btn-project-link" href="https://github.com/jayleenli/Steam-Activity-Filter" target="_blank">Github </a>
+											<a class="btn btn-project-link" href="https://chrome.google.com/webstore/detail/steam-activity-filter/dnhaemngbanccjamofoeokgpadfegjcf" target="_blank">Chrome Store </a>
+											</small>
+										<small style="float:right;margin-top: 6px;">Apr 2017 -<br/>Present</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-4">
+								<div class="blog-entry">
+									<a href="https://madelinehuang.github.io/ideablr/" target="_blank" class="blog-img"><img src="images/ideablr.JPG" class="img-responsive" alt="Ideablr screenshot"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://madelinehuang.github.io/ideablr/" target="_blank">Ideablr</a></h3>
+										</center>
+										<p>Ideablr was a website created for the Business Professionals of America (BPA) Web Design Team Competition. The theme was to build a DIY website, and thus, Ideablr was born as a social media platform for users to share creative and simple DIYs.</p>
+										<span>
+											<small><a class="btn btn-project-link" href="https://github.com/jayleenli/ideablr.com" target="_blank">Github </a>
+											</small>
+										<small style="float:right;margin-top: 18px;">Feb 2017</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+							<div class="services color-4">
+								<div class="blog-entry">
+									<a href="https://github.com/jayleenli/Steam-Trade-Forum-Link-Puller" target="_blank" class="blog-img"><img src="images/steamforum.JPG" class="img-responsive" alt="Steam-Trade-Forum-Link-Puller"></a>
+									<div class="desc">
+										<center>
+											<h3><a href="https://github.com/jayleenli/Steam-Trade-Forum-Link-Puller" target="_blank">Steam Forum Link Retriever</a></h3>
+										</center>
+										<p>Web scraping C# Program to retrieve Steam forum pages from the Steam badges page.</p>
+										<span>
+											<small><a class="btn btn-project-link" href="https://github.com/jayleenli/Steam-Trade-Forum-Link-Puller" target="_blank">Github </a>
+											</small>
+										<small style="float:right;margin-top: 18px;">Jun 2017</small> 
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+			<!--------------------------SHOWCASE PERSONAL PROJECTS ROW END ---------------------------->
+
+					<!--div class="row">
 						<div class="col-md-12 animate-box">
 							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
 						</div>
-					</div>
+					</div-->
 				</div>
 			</section>
 
-			<section class="colorlib-services" data-section="services">
+			<!--section class="colorlib-services" data-section="services">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -575,15 +853,15 @@
 								</div>
 
 
-								<!--div class="desc">
+								<div class="desc">
 									<h3>Application</h3>
 									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div-->
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</section-->
 
 		
 

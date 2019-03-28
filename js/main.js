@@ -202,12 +202,6 @@
 
 	};
 
-	/*Javascript for the tab selection in projects
-		* color 1 (light blue) - hackathons
-		* color 2 (purple) - personal
-		* color 5 (turqoise green) - leadership/stuff
-	*/
-
 
 
 
@@ -312,3 +306,59 @@
 
 
 }());
+
+/*Javascript for the tab selection in projects
+	* color 1 (light blue) - hackathons
+	* color 4 (purple) - personal
+	* color 5 (turqoise green) - leadership/stuff
+
+	Numbers
+	* 1 = Recent
+	* 2 = Hackathons
+	* 3 = Leadership/affliations
+	* 4 = Personal
+*/
+function makeActive1()
+{
+	$(".active").removeClass('active');
+	document.getElementById("tab-recent").classList.add('active');
+	
+	$(".showcase-show").addClass('showcase-hide');
+	$(".showcase-show").removeClass('showcase-show');
+
+	$("#showcase-recent").removeClass('showcase-hide');
+	$("#showcase-recent").addClass('showcase-show');
+}
+function makeActive2()
+{
+	$(".active").removeClass('active');
+	document.getElementById("tab-hackathons").classList.add('active');
+
+	$(".showcase-show").addClass('showcase-hide');
+	$(".showcase-show").removeClass('showcase-show');
+
+	$("#showcase-hackathons").removeClass('showcase-hide');
+	$("#showcase-hackathons").addClass('showcase-show');
+}
+function makeActive3()
+{
+	$(".active").removeClass('active');
+	document.getElementById("tab-leadership").classList.add('active');
+
+	$(".showcase-show").addClass('showcase-hide');
+	$(".showcase-show").removeClass('showcase-show');
+
+	$("#showcase-leadership").removeClass('showcase-hide');
+	$("#showcase-leadership").addClass('showcase-show');
+}
+function makeActive4()
+{
+	$(".active").removeClass('active');
+	document.getElementById("tab-personal").classList.add('active');
+
+	$(".showcase-show").addClass('showcase-hide');
+	$(".showcase-show").removeClass('showcase-show');
+
+	$("#showcase-personal").removeClass('showcase-hide');
+	$("#showcase-personal").addClass('showcase-show');
+}
