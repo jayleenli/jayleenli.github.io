@@ -1,0 +1,335 @@
+/* ----------------------------------------------- */
+/*                    Parameters                   */
+/* ----------------------------------------------- */
+/* --- Colors --- */
+/* --- Fonts --- */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 656px;
+  height: 771px;
+}
+@media screen and (max-height: 800px) {
+  .wrapper {
+    -webkit-transform: translate(-50%, -50%) scale(0.6);
+            transform: translate(-50%, -50%) scale(0.6);
+  }
+}
+.text {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  font-weight: 400;
+  font-size: 30px;
+}
+.bottom-text {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+.background-wrapper {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 656px;
+  height: 580px;
+  overflow: hidden;
+}
+.background-wrapper .leg {
+  position: absolute;
+  top: -100px;
+  left: 240px;
+  width: 250px;
+  height: 650px;
+  border: 4px solid #663326;
+  background-color: #8b4534;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+.background-wrapper .leg#leg-2 {
+  left: -200px;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+
+.background-wrapper .background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background-color: #70b8a9;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+.background-wrapper .background ul {
+  list-style: none;
+}
+.background-wrapper .background ul li {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #478941;
+}
+.background-wrapper .background ul li:nth-child(1) {
+  bottom: -100px;
+  left: -100px;
+  width: 500px;
+  height: 500px;
+  background-color: #59ac51;
+}
+.background-wrapper .background ul li:nth-child(2) {
+  bottom: 200px;
+  left: 20px;
+  width: 150px;
+  height: 100px;
+  background-color: #356631;
+}
+.background-wrapper .background ul li:nth-child(3) {
+  bottom: 250px;
+  left: 80px;
+  width: 250px;
+  height: 140px;
+  background-color: #356631;
+}
+.background-wrapper .background ul li:nth-child(4) {
+  bottom: 380px;
+  left: 80px;
+  width: 250px;
+  height: 140px;
+  background-color: #59ac51;
+}
+.background-wrapper .background ul li:nth-child(5) {
+  bottom: -50px;
+  right: -50px;
+  width: 350px;
+  height: 500px;
+  background-color: #356631;
+}
+.background-wrapper .background ul li:nth-child(6) {
+  bottom: 100px;
+  right: 80px;
+  width: 250px;
+  height: 150px;
+  background-color: #509a49;
+}
+.background-wrapper .background ul li:nth-child(7) {
+  bottom: 300px;
+  right: -50px;
+  width: 350px;
+  height: 200px;
+  background-color: #356631;
+}
+.background-wrapper .background ul li:nth-child(8) {
+  bottom: 300px;
+  right: -80px;
+  width: 250px;
+  height: 150px;
+  background-color: #59ac51;
+}
+.background-wrapper .background ul li:nth-child(9) {
+  bottom: 500px;
+  left: 80px;
+  width: 250px;
+  height: 150px;
+  background-color: #3e7839;
+}
+.background-wrapper .background ul li:nth-child(10) {
+  bottom: 400px;
+  right: -30px;
+  width: 150px;
+  height: 250px;
+  background-color: #478941;
+}
+.pikachu-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+}
+.pikachu-wrapper .pikachu-corrector {
+  /* Used to mask transparency problems */
+  z-index: 4;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 600px;
+  height: 500px;
+  background-color: #752510;
+  -webkit-mask: url(https://cdn.discordapp.com/attachments/234307310514733056/514902850023849994/pikachu-inside-clip.svg);
+          mask: url(https://cdn.discordapp.com/attachments/234307310514733056/514902850023849994/pikachu-inside-clip.svg);
+  -webkit-mask-size: 656px 566px;
+          mask-size: 656px 566px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: -52px -62px;
+          mask-position: -52px -62px;
+}
+.pikachu-wrapper .pikachu {
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+  background: transparent;
+}
+.pikachu-wrapper .pikachu .body {
+  z-index: 5;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 600px;
+  height: 500px;
+  background-color: #52120d;
+  -webkit-mask: url(https://cdn.discordapp.com/attachments/234307310514733056/514902945763164172/pikachu-border-clip.svg);
+          mask: url(https://cdn.discordapp.com/attachments/234307310514733056/514902945763164172/pikachu-border-clip.svg);
+  -webkit-mask-size: 652px 562px;
+          mask-size: 652px 562px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: -50px -60px;
+          mask-position: -50px -60px;
+}
+.pikachu-wrapper .pikachu .body-second {
+  z-index: 4;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 600px;
+  height: 500px;
+  background-color: #eab446;
+  -webkit-mask: url(https://cdn.discordapp.com/attachments/234307310514733056/514902850023849994/pikachu-inside-clip.svg);
+          mask: url(https://cdn.discordapp.com/attachments/234307310514733056/514902850023849994/pikachu-inside-clip.svg);
+  -webkit-mask-size: 652px 562px;
+          mask-size: 652px 562px;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: -50px -60px;
+          mask-position: -50px -60px;
+}
+.pikachu-wrapper .pikachu .body-second .ear {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 120px;
+  background-color: #752510;
+}
+.pikachu-wrapper .pikachu .body-second .ear#ear-2 {
+  top: 50px;
+  left: 583px;
+  width: 70px;
+  height: 120px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+.pikachu-wrapper .pikachu .eye {
+  z-index: 10;
+  position: absolute;
+  left: 195px;
+  bottom: 195px;
+  width: 40px;
+  height: 45px;
+  background-color: #752510;
+  border: 3px solid #52120d;
+  border-radius: 50%;
+}
+.pikachu-wrapper .pikachu .eye::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: #f6e8df;
+  border: 3px solid #f0dacb;
+  border-radius: 50%;
+}
+.pikachu-wrapper .pikachu .eye#eye-2 {
+  left: 375px;
+  bottom: 195px;
+}
+.pikachu-wrapper .pikachu .nose {
+  z-index: 10;
+  position: absolute;
+  left: 280px;
+  bottom: 170px;
+  width: 24px;
+  height: 10px;
+  background-color: #752510;
+  border: 3px solid #52120d;
+  border-radius: 50%;
+}
+.pikachu-wrapper .pikachu .jowl {
+  z-index: 10;
+  position: absolute;
+  left: 122px;
+  bottom: 115px;
+  width: 60px;
+  height: 50px;
+  background-color: #c74d24;
+  border: 3px solid #b14520;
+  border-radius: 50%;
+}
+.pikachu-wrapper .pikachu .jowl#jowl-2 {
+  bottom: 110px;
+  left: 420px;
+}
+.pikachu-wrapper .pikachu .mouth {
+  z-index: 10;
+  position: absolute;
+  left: 268px;
+  bottom: 76px;
+  width: 70px;
+  height: 54px;
+  background-color: #ef775a;
+  border: 4px solid #52120d;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 60px;
+}
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
