@@ -571,6 +571,8 @@ body.offcanvas {
     background: #a84cb8; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
     background: #2fa499; }
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-6 {
+    background: #5bc0de; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
     background: #fff;
     width: 20px;
@@ -1540,6 +1542,11 @@ body.offcanvas {
   letter-spacing:1px;
 }
 
+.photo-caption {
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+}
 .media:hover .layer {
   
   opacity: 0.8;
