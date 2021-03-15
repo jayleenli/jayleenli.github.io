@@ -79,6 +79,7 @@
 			font-weight: 400;
 			text-decoration: none;
 			vertical-align: baseline;
+			text-align: center;
 			font-size: 10pt;
 			font-family: "Roboto";
 			font-style: normal
@@ -106,6 +107,22 @@
 
 		.c5 {
 			padding-top: 8pt;
+			padding-bottom: 0pt;
+			line-height: 1.15;
+			orphans: 2;
+			widows: 2;
+			text-align: center
+		}
+		.c50 {
+			padding-top: 0pt;
+			padding-bottom: 0pt;
+			line-height: 1.15;
+			orphans: 2;
+			widows: 2;
+			text-align: center
+		}
+		.c501 {
+			padding-top: 2pt;
 			padding-bottom: 0pt;
 			line-height: 1.15;
 			orphans: 2;
@@ -259,7 +276,7 @@
 			color: #000000;
 			font-size: 26pt;
 			padding-bottom: 3pt;
-			font-family: "Arial";
+			font-family: "Roboto";
 			line-height: 1.15;
 			page-break-after: avoid;
 			orphans: 2;
@@ -272,7 +289,7 @@
 			color: #666666;
 			font-size: 15pt;
 			padding-bottom: 16pt;
-			font-family: "Arial";
+			font-family: "Roboto";
 			line-height: 1.15;
 			page-break-after: avoid;
 			orphans: 2;
@@ -283,14 +300,15 @@
 		li {
 			color: #000000;
 			font-size: 11pt;
-			font-family: "Arial"
+			font-family: "Roboto"
 		}
 
 		p {
 			margin: 0;
 			color: #000000;
 			font-size: 11pt;
-			font-family: "Arial"
+			font-family: "Roboto"
+			line-height: 1.2;
 		}
 
 		h1 {
@@ -298,7 +316,7 @@
 			color: #000000;
 			font-size: 20pt;
 			padding-bottom: 6pt;
-			font-family: "Arial";
+			font-family: "Roboto";
 			line-height: 1.15;
 			page-break-after: avoid;
 			orphans: 2;
@@ -311,7 +329,7 @@
 			color: #000000;
 			font-size: 16pt;
 			padding-bottom: 6pt;
-			font-family: "Arial";
+			font-family: "Roboto";
 			line-height: 1.15;
 			page-break-after: avoid;
 			orphans: 2;
@@ -324,7 +342,7 @@
 			color: #434343;
 			font-size: 14pt;
 			padding-bottom: 4pt;
-			font-family: "Arial";
+			font-family: "Roboto";
 			line-height: 1.15;
 			page-break-after: avoid;
 			orphans: 2;
@@ -337,7 +355,7 @@
 			color: #666666;
 			font-size: 12pt;
 			padding-bottom: 4pt;
-			font-family: "Arial";
+			font-family: "Roboto";
 			line-height: 1.15;
 			page-break-after: avoid;
 			orphans: 2;
@@ -350,7 +368,7 @@
 			color: #666666;
 			font-size: 11pt;
 			padding-bottom: 4pt;
-			font-family: "Arial";
+			font-family: "Roboto";
 			line-height: 1.15;
 			page-break-after: avoid;
 			orphans: 2;
@@ -363,7 +381,7 @@
 			color: #666666;
 			font-size: 11pt;
 			padding-bottom: 4pt;
-			font-family: "Arial";
+			font-family: "Roboto";
 			line-height: 1.15;
 			page-break-after: avoid;
 			font-style: italic;
@@ -378,15 +396,32 @@
 			grid-auto-flow: column;
 			margin: 0 0 1rem 0;
 		}
-      	
+
+		span {
+			line-height: 1.2;
+		}
+
+		sup {
+			line-height: 1.0;
+		}
+
+		hr {
+			width:60%;
+    		margin:0 auto;
+    		color: #999999;
+		}
+
+		.imgAddBorder { 
+			border: 1px solid black;
+		}
       </style>
    </head>
    <body class="c9">
       <p class="c5"><span class="c24">AR Sandbox Aquariu</span><span class="c24">m</span><span class="c19 c24">&nbsp;</span></p>
       <p class="c5"><span class="c19 c30">Jayleen Li</span></p>
-      <p class="c5"><span class="c13">UC Santa Barbara</span></p>
-      <p class="c5"><span class="c13">jayleenli@ucsb.edu</span></p>
-      <p class="c5"><span class="c32">March 2021</span></p>
+      <p class="c501"><span class="c13">UC Santa Barbara</span></p>
+      <p class="c50"><span class="c13">jayleenli@ucsb.edu</span></p>
+      <p class="c50"><span class="c32">March 2021</span></p>
       <ol class="c29 lst-kix_ar4fy7blwe17-0 start" start="1">
          <li class="c3 c7 li-bullet-0 c2"><span class="c2"><a class="c18" href="#id.sx4kjdieoko">OVERVIEW</a></span></li>
          <li class="c3 c7 li-bullet-0 c2"><span class="c2"><a class="c18" href="#id.xg05ly78bry3">MOTIVATION</a></span></li>
@@ -421,7 +456,7 @@
       <p class="c0"><span class="c6"></span></p>
       <p class="c3"><span class="c6">The following diagram is how the original idea was meant to be. However the actual end product isn&rsquo;t exactly as described as there were some difficulties faced regarding the flow between 3D objects to Android.</span></p>
       <center>
-         <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 712.50px; height: 87.08px;"><img alt="" src="images/image1.png" style="width: 712.50px; height: 87.08px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+         <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 706.50px; height: 87.08px;"><img alt="" src="images/image1.png" style="width: 706.50px; height: 87.08px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
          <p class="c5"><span class="c25">Fig 2. Application flow</span></p>
          <p class="c3 c4"><span class="c6"></span></p>
       </center>
@@ -451,57 +486,77 @@
       <p class="c3"><span class="c15">Feel free to view the </span><span class="c10"><a class="c18" href="https://www.google.com/url?q=https://github.com/jayleenli/AR-Sandbox-Aquarium&amp;sa=D&amp;source=editors&amp;ust=1615778021669000&amp;usg=AOvVaw0yQ_gVjrggcK0-OFfhSmAq">Jupyter Notebook</a></span><span class="c15">&nbsp;version</span><span class="c6">&nbsp;for more insight and step by step for the conversion process.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c8">Preparing the 2D Image</span></p>
-      <p class="c3"><span class="c15">The core part of this section was OpenCV&rsquo;s GrabCut algorithm. GrabCut segments an image by graph cuts into a foreground and background. </span><span class="c15 c21"><sup>[9]</sup></span><span class="c6">&nbsp;To detect the 2D object to convert, the GrabCut foreground graph cut was selected.</span></p>
+      <p class="c3"><span class="c15">The core part of this section was OpenCV&rsquo;s GrabCut algorithm. GrabCut segments an image by graph cuts into a foreground and background. </span><sup>[9]</sup><span class="c6">&nbsp;To detect the 2D object to convert, the GrabCut foreground graph cut was selected.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c15">To speed up the algorithm, the original image is first scaled down to a maximum of 640000 total pixels. Then the image is thresholded so that pixels with a color value &gt;= 180 for all three RGB values would be automatically set as background for the GrabCut algorithm to cut more accurately. Thresholding at this value also helped with variability of external lighting factors. I noticed through testing that this was a good value in general even if the photo was taken with a brighter environment but worked best with moderately poor lighting. Previously without the thresholding, the GrabCut algorithm performed poorly for detecting the active object within the paper.</span></p>
+      <p class="c3"><span class="c15">To speed up the algorithm, the original image is first scaled down to a maximum of 640000 total pixels. Then the image is thresholded so that pixels with a color value &gt;= 180 for all three RGB values would be automatically set as background for the GrabCut algorithm to cut more accurately. Thresholding at this value also helped with variability of external lighting factors. I noticed through testing that 180 was a good value in general but worked best with moderately poor lighting. Previously without the thresholding, the GrabCut algorithm performed poorly for detecting the active object within the paper.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c1"><span class="c6"></span></p>
-      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 216.00px;"><img alt="" src="images/image17.png" style="width: 288.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c5"><span class="c16">Fig 4. Scaled image</span></p>
-      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 216.00px;"><img alt="" src="images/image9.png" style="width: 288.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c5"><span class="c25">Fig 5. Scaled image with thresholding</span></p>
+      <p class="c5 grid">
+	      <span style="display: inline-block;  margin: auto auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 216.00px;"><img alt="" src="images/image17.png" style="width: 288.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16">Fig 4. Scaled image</span></span>
+	      
+	      <span style="display: inline-block; margin: auto auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 216.00px;"><img alt="" src="images/image9.png" style="width: 288.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16">Fig 5. Scaled image with thresholding</span></span>
+      </p>
+      <p class="c3 c4"><span class="c8"></span></p>
+
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">The goal of the GrabCut algorithm was to retrieve the outline of the object from OpenCV&rsquo;s contouring library. The image was then converted to binary to contour and one iteration of erosion was applied to smooth out the edges of the object. Note, the contour isn&rsquo;t perfect due susceptibility of the image to external environmental lighting. Depending on the lighting of the image taken, different contours can be produced.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">Since there could be multiple objects within the frame, only the largest contoured object was retrieved to create the object.</span></p>
+      <p class="c3"><span class="c6">The eroded contours were smoothed with openCV and this became the contour used for the rest of the algorithm. Since there could be multiple objects within the frame, only the largest contoured object was retrieved to create the object.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 216.00px;"><img alt="" src="images/image15.png" style="width: 288.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c5"><span class="c16">Fig 6. GrabCut Image</span></p>
-      <p class="c1"><span class="c16"></span></p>
-      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 287.00px; height: 214.00px;"><img alt="" src="images/image19.png" style="width: 292.27px; height: 214.00px; margin-left: -2.63px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c5"><span class="c16">Fig 7. Largest contoured edge after one iteration of erosion (still contains some artifacts)</span></p>
+      
+		<p class="c5 grid">
+	      <span style="display: inline-block;  margin: auto auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 216.00px;"><img alt="" src="images/image15.png" style="width: 288.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16">Fig 6. GrabCut Image</span></span>
+	      
+	      <span style="display: inline-block; margin: auto auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 216.00px;"><img alt="" src="images/image19.png" style="width: 288.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16">Fig 7. Largest contoured edge after one iteration of erosion (still contains some artifacts)</span></span>
+      </p>
+      <p class="c3 c4"><span class="c8"></span></p>
+
       <p class="c3 c4"><span class="c8"></span></p>
       <p class="c3"><span class="c12">Creating the Point Cloud</span></p>
       <p class="c3"><span class="c15">All points inside the contour were mapped to their corresponding pixels from the image and was formatted into a 3D point cloud. Because of internal OpenCV functions, the resulting points were rotated 180 degrees around the x axis, giving an &ldquo;upside-down&rdquo; image. This is later corrected using open3d&rsquo;s rotation library. To achieve the desired extruded image shape as described in </span><span class="c15">Fig 3</span><span class="c6">, the set of points of the object were copied onto two planes that were a distance of 10 pixels from each other. Normals were set in opposite directions for each plane respectively. Normals were necessary for the Ball-Pivoting Algorithm and Poisson algorithms.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">Fig 8. 3D render of the generated point cloud</span></p>
-      <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">Fig 9. 3D render of the generated point cloud with normals</span></p>
+
+
+      <p class="c5 grid">
+	      <span style="display: inline-block;  margin: auto auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 216.00px;"><img alt="" src="images/point_cloud.gif" class="imgAddBorder" style="width: 288.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16">Fig 8. 3D render of the generated point cloud</span></span>
+	      
+	      <span style="display: inline-block; margin: auto auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 216.00px;"><img alt="" src="images/point_cloud_n.gif" class="imgAddBorder" style="width: 288.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16">Fig 9. 3D render of the generated point cloud with normals</span></span>
+      </p>
+      <p class="c3 c4"><span class="c8"></span></p>
+
+
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c8">Triangular Mesh Reconstruction</span></p>
       <p class="c3"><span class="c6">Three methods were investigated to experiment which point cloud -&gt; triangular mesh algorithm would work best for this project&rsquo;s use case. In the project we chose the third option but I will briefly explain all of them and compare them.</span></p>
       <ol class="c29 lst-kix_rue7egkl5quc-0 start" start="1">
-         <li class="c3 c17 li-bullet-0"><span class="c15">OBJ files + Delaunay Triangulation + Manual Mapping</span><span class="c14">&nbsp;<sup>[1]</sup></span></li>
-         <li class="c3 c17 li-bullet-0"><span class="c15">Ball-Pivoting Algorithm </span><span class="c14"><sup>[2]</sup></span></li>
-         <li class="c3 c17 li-bullet-0"><span class="c15">Poisson Surface Reconstruction </span><span class="c14"><sup>[3]</sup></span></li>
+         <li class="c3 c17 li-bullet-0"><span class="c15">OBJ files + Delaunay Triangulation + Manual Mapping</span><sup>[1]</sup></li>
+         <li class="c3 c17 li-bullet-0"><span class="c15">Ball-Pivoting Algorithm </span><sup>[2]</sup></li>
+         <li class="c3 c17 li-bullet-0"><span class="c15">Poisson Surface Reconstruction </span><sup>[3]</sup></li>
       </ol>
-      <p class="c3"><span class="c6"><br>For options 2 and 3, GLTF files were chosen as the export object model because it was simpler to convert the texture mappings to GLTF than other investigated object formats (.ply, .obj, .stl). Resulting object files were also scaled down by a factor of 0.0005 to match the measuring system of ARCore.</span></p>
+      <p class="c3"><span class="c6"><br>For options 2 and 3, GlTF files were chosen as the export object model because it was simpler to convert the texture mappings to GlTF than other investigated object formats (.ply, .obj, .stl). Resulting object files were also scaled down by a factor of 0.0005 to match the measuring system of ARCore.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c11">OBJ files + Delaunay Triangulation + Manual Mapping</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 144.30px; height: 216.45px;"><img alt="" src="images/image16.png" style="width: 144.30px; height: 216.45px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c3"><span class="c15">Delaunay triangulation is an algorithm where given a set of points in a plane there is a triangulation that can be created such that no point inside the plane is inside the circumcircle of another triangle within the same triangulation. </span><span class="c15 c21"><sup>[1]</sup> &nbsp;</span></p>
+      <p class="c3"><span class="c6">GlTF is a 3D object file type formated in JSON that maps textures encoded from base64 designed as a more efficient way to transmit 3D files over networks. The top of the JSON tree describes the scene and node of the object and attributes like, mesh, accessors, bufferviews, and buffers, work together to define the entirety of the model. Textures and buffers can be defined separately from the GlTF file but can be encoded into the same file. <sup>[10]</sup> In our case, we did not use GlTF's defined material and texture attributes to create the models, everything was defined using buffers, bufferViews, and accessors.</span></p>
+      <p class="c3 c4"><span class="c6"></span></p>
+      <p class="c3"><span class="c11">OBJ files + Delaunay Triangulation + Manual Mapping</span>
+
+      <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 144.30px; height: 216.45px;"><img alt="" src="images/image16.png" style="width: 144.30px; height: 216.45px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><span class="c15">Delaunay triangulation is an algorithm where given a set of points in a plane there is a triangulation that can be created such that no point inside the plane is inside the circumcircle of another triangle within the same triangulation. </span><sup>[1]</sup></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">The wavefront .obj file format &nbsp;has a very straightforward format. Vertices are represented like so (x, y, z [,w]). Where the square brackets indicate the attribute is optional.</span></p>
       <p class="c23"><span class="c19 c26">v 0.123 0.234 0.345 1.0</span></p>
       <p class="c3"><span class="c6">Polygon faces are defined like so (triangles only).</span></p>
       <p class="c23"><span class="c26 c19">f 1 2 3</span></p>
-      <p class="c3"><span class="c15">Where each number after f defines the three points by index number in the file of the triangular face. </span><span class="c15 c21"><sup>[4]</sup></span></p>
+      <p class="c3"><span class="c15">Where each number after f defines the three points by index number in the file of the triangular face. </span><sup>[4]</sup></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">The idea here was to grab all vertices along the edge of the contoured edge and perform the Delaunay algorithm onto the set of points and create the minimum required number of triangular faces for one of the object planes and convert into the OBJ 3D object file format. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">Afterwards, we would replicate this plane and then create more triangular faces to connect both planes at their edges in a zigzag format (shown in Fig 11). </span></p>
-      <p class="c3"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 336.00px; height: 179.00px;"><img alt="" src="images/image7.png" style="width: 336.00px; height: 179.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 336.00px; height: 179.00px;"><img alt="" src="images/image7.png" style="width: 336.00px; height: 179.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span> <span class="c6">Afterwards, we would replicate this plane and then create more triangular faces to connect both planes at their edges in a zigzag format (shown in Fig 11). </span></p>
+      <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">Extrusion would be a simple offset calculation from the previous plane. Again, this would create the minimum number of triangular faces needed. This would then get added to the OBJ file using the format defined earlier. Later the points from the image would need to be mapped pixel by pixel to the image to create a texture mapping, and this would create our object model.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">When this method was applied to the contour, it resulted in an undesirable triangulation (shown below). More work would be needed to restrict the triangulation to be within the object bounds. </span></p>
@@ -510,10 +565,10 @@
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">I believe this method would work if there was a better triangulation algorithm. The pros that these models have is that they would be of the smallest file size. However other methods were pursued for this project in favor of simpler methods.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c11">Ball-Pivoting Algorithm</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 261.50px; height: 197.35px;"><img alt="" src="images/image14.png" style="width: 261.50px; height: 197.35px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c3"><span class="c6">Essentially the Ball-Pivoting Algorithm, (BPA) simulates the use of a virtual ball to generate a mesh from a given point cloud describing the surface of some 3D object. This ball will &ldquo;roll&rdquo; across the point cloud surface based on a given radius and will catch between points and create triangles until all points are exhausted. A ball radius of 2*average point distance was chosen.</span></p>
+      <p class="c3"><span class="c11">Ball-Pivoting Algorithm</span></p>
+      <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 261.50px; height: 197.35px;"><img alt="" src="images/image14.png" style="width: 261.50px; height: 197.35px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c6">Essentially the Ball-Pivoting Algorithm, (BPA) simulates the use of a virtual ball to generate a mesh from a given point cloud describing the surface of some 3D object. This ball will &ldquo;roll&rdquo; across the point cloud surface based on a given radius and will catch between points and create triangles until all points are exhausted. A ball radius of 2*average point distance was chosen.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">This option requires very accurate normals and thus resulted in a mesh that was undesirable. It also took a significantly longer time than Poisson.</span></p>
+      <p class="c3"><span class="c6">This option requires precise and accurate points and normals and thus resulted in a mesh that was undesirable since our points did not cover the entirety of the object. BPA fails with the point cloud generated because the “ball” would roll into the space between the two planes, and create the dotted outline as shown in Fig 14. It also took a significantly longer time than Poisson.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">Due to an undesirable model and significant processing time, this option was not chosen for the final project implementation.</span></p>
       <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 278.00px; height: 207.12px;"><img alt="" src="images/image2.png" style="width: 278.00px; height: 207.12px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
@@ -525,30 +580,37 @@
       <p class="c5"><span class="c6">Fig 15. Example of Poisson Surface Reconstruction </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">&lt;INSERT GIF HERE FIG 16&gt;</span></p>
+      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 278.00px; height: 207.12px;"><img alt="" src="images/poisson.gif" style="width: 278.00px; height: 207.12px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
+      <p class="c5"><span class="c6">Fig 16. Clownfish object Poisson surface reconstruction </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">The blanket was the best choice for the way we defined our point cloud probably because our point cloud had a lot of space in between. BPA fails with the point cloud we have generated because the &ldquo;ball&rdquo; would roll into the space between the two planes. Poisson reconstruction still leaves some artifacts but overall produced a very smooth object that fits the organic style of a drawing.</span></p>
+      <p class="c3"><span class="c6">The Poisson formulation considers all the points at once, without resorting to heuristic spatial partitioning or blending, and is therefore highly resilient to data noise. <sup>[11]</sup> The Poisson "blanket" was the best choice for the way we defined our point cloud  because our point cloud had a lot of space in between and needs an algorithm that is able to interpret the intention from the missing points. Poisson reconstruction still leaves some artifacts but overall produced a very smooth object that fits the organic style of a drawing.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c12">2. Android App</span></p>
       <p class="c3"><span class="c6">In the beginning I started with just ARCore and JavaGL but later moved the app part to Sceneform for ease of instant object placement within the AR scene. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">Sceneform can only load either GLTF or GLB 3D object files at runtime. Both file formats were designed for run time 3D content loading. I choose GLB over GLTF because of an issue mentioned in the &ldquo;Issues and Possible Fixes&rdquo; section. However, the conversion algorithm can only convert to GLTF so I had to convert them into GLB afterwards so that they would load into Sceneform.</span></p>
+      <p class="c3"><span class="c6">Sceneform can only load either GlTF or GLB 3D object files at runtime. Both file formats were designed for run time 3D content loading. GLB is just a little-endian binary version of GlTF (but is actually stored in hex). It was created to minimize and combine separated buffer and texture data from GLTF files into one file. <sup>[10]</sup> I choose GLB over GlTF because of an issue mentioned in the &ldquo;Issues and Possible Fixes&rdquo; section. However, the conversion algorithm can only convert to GlTF so I had to convert them into GLB afterwards so that they would load into Sceneform.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">Currently the app implementation is not as desired. I wanted to have the user be able to take an image from their phone and do real time image conversion into a 3D model and save the model on the cloud for immediate use within the AR scene. Instead, conversion is done offline and models are manually uploaded to Github, which is acting as a free version of a cloud upload service.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">To add a new GLB model file to the Android app, add new Strings for the filenames to the MODELFILES array. This will tell the app the exact object files within this GitHub repository to look for at runtime. </span></p>
+      <p class="c3 c4"><span class="c6"></span></p>
       <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 679.50px; height: 52.00px;"><img alt="" src="images/image3.png" style="width: 679.50px; height: 52.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
       <p class="c5"><span class="c16">Fig 16. Where models are indicated</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">On the camera section of the app, the user is able to take images with their phone and see the produced bitmap on the screen. This will automatically save the image on the user&rsquo;s device. Bitmaps are not the best quality but if resized can produce a sharp object model.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 183.60px; height: 388.63px;"><img alt="" src="images/image11.png" style="width: 183.60px; height: 388.63px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c5"><span class="c16">Fig 17. Main activity of app</span></p>
-      <p class="c1"><span class="c16"></span></p>
-      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 187.00px; height: 392.19px;"><img alt="" src="images/image12.png" style="width: 187.00px; height: 392.19px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c5"><span class="c16">Fig 18.Camera Page</span></p>
-      <p class="c1"><span class="c16"></span></p>
-      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 187.55px; height: 391.96px;"><img alt="" src="images/image13.png" style="width: 187.55px; height: 391.96px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c25">Fig 19. After taking photo (saves to phone storage)</span></p>
+
+       <p class="c5 grid">
+	      <span style="display: inline-block;  margin: auto auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 220.00px; height: auto;"><img alt="" src="images/image11.png" class="imgAddBorder" style="width: 220.00px; height: auto; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16" style="display: inline-block; height:32px">Fig 17. Main activity of app</span></span>
+	      
+	      <span style="display: inline-block; margin: auto auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 220.00px; height: auto"><img alt="" src="images/image12.png" class="imgAddBorder" style="width: 220.00px; height: auto; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16" style="display: inline-block; height:32px">Fig 18. Camera Page</span></span>
+
+	      <span style="display: inline-block; margin: auto auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 220.00px; height: auto"><img alt="" src="images/image13.png" class="imgAddBorder" style="width: 220.00px; height: auto; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16">Fig 19. After taking photo (saves to phone storage)</span></span>
+      </p>
+
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c15">I will explain in the next section some issues I ran into with the Android app implementation and ways I was able to go around or or if I couldn&#39;t, ideas of how these issues could be circumvented. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
@@ -560,20 +622,23 @@
       <p class="c3"><span class="c6">The lighting environment greatly affects the result quality of OpenCV&rsquo;s GrabCut algorithm. If the background is too bright and the colors used are also lighter, it can result in objects that look like this. For best results, take images under a darker setting and change the threshold if need be.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c1"><span class="c6"></span></p>
-      <p class="c1"><span class="c6"></span></p>
-      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 302.25px; height: 232.50px;"><img alt="" src="images/image6.png" style="width: 302.25px; height: 232.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c5"><span class="c16">Fig 20. Result jellyfish model under bright lighting</span></p>
-      <p class="c3 c4"><span class="c16"></span></p>
-      <p class="c1"><span class="c16"></span></p>
-      <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 191.50px; height: 234.68px;"><img alt="" src="images/image4.png" style="width: 191.50px; height: 234.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c5"><span class="c25">Fig 21. Result jellyfish model under darker lighting</span></p>
-      <p class="c3"><span class="c11">Bug in point cloud to 3D object conversion</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 159.50px; height: 312.16px;"><img alt="" src="images/image5.png" style="width: 159.50px; height: 312.16px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
-      <p class="c3"><span class="c6">The open3d conversion from a triangle mesh to an object actually creates a faulty GLTF file. So when this is opened in Windows 3D viewer it looks great but once the same models are loaded into sceneform they become red and black.</span></p>
+
+      <p class="c5 grid">
+	      <span style="display: inline-block;  margin: 16px auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: auto;"><img alt="" src="images/image6.png" class="imgAddBorder" style="width: 288.00px; height: auto; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16">Fig 20. Result jellyfish model under bright lighting</span></span>
+	      
+	      <span style="display: inline-block; margin: 0 auto; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 240px;"><img alt="" src="images/image4.png" class="imgAddBorder" style="display: inline-block; width: 238.00px; height: 240px; margin-left: 0.00px; margin-top: 0.00px; margin-bottom: 6px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+	      <span class="c16" style="display: inline-block;">Fig 21. Result jellyfish model under darker lighting</span></span>
+      </p>
+      <p class="c3 c4"><span class="c8"></span></p>
+
+      <p class="c3"><span class="c11">Bug in point cloud to 3D object conversion</span></p>
+      <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 159.50px; height: 312.16px;"><img alt="" src="images/image5.png" style="width: 159.50px; height: 312.16px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c6">The open3d conversion from a triangle mesh to an object actually creates a faulty GlTF file. So when this is opened in Windows 3D viewer it looks great but once the same models are loaded into sceneform they become red and black.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">The workaround here was actually converting these GLTF models into GLB file type. However a direct transformation was not viable as converting the GLTF file to a GLB file directly would also be faulty. I tried to figure out why this was the case and it traces back to certain GLTF buffers set to values outside of their maximum range. A workaround was to open the file in Windows 3D viewer and then save the file as a GLB type as 3D Viewer does some model corrections behind the scenes. You will see this in the video demo in the &ldquo;Results&rdquo; section.</span></p>
+      <p class="c3"><span class="c6">The workaround here was actually converting these GlTF models into GLB file type. However a direct transformation was not viable as converting the GlTF file to a GLB file directly would also be faulty. I tried to figure out why this was the case and it traces back to certain GlTF buffers set to values outside of their maximum range. A workaround was to open the file in Windows 3D viewer and then save the file as a GLB type as 3D Viewer does some model corrections behind the scenes. You will see this in the video demo in the &ldquo;Results&rdquo; section.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c11">Conversion is not seamless</span></p>
-      <p class="c3"><span class="c6">The original intention of this project was to make the conversion seamless for the user within the app. However due to the problem mentioned above, it was not possible in the timeframe of this project. I did come up with a design that would work assuming the faulty GLTF files could be fixed. </span></p>
+      <p class="c3"><span class="c6">The original intention of this project was to make the conversion seamless for the user within the app. However due to the problem mentioned above, it was not possible in the timeframe of this project. I did come up with a design that would work assuming the faulty GlTF files could be fixed. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">To make a seamless conversion, the 2D to 3D conversion should be set up as a basic web server serving a few endpoints</span></p>
       <ul class="c29 lst-kix_888o7ou4f534-0 start">
@@ -582,15 +647,17 @@
          <li class="c3 c17 li-bullet-0"><span class="c6">POST endpoint to upload an image, and returns a GLB model of image</span></li>
       </ul>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">Here I wouldn&rsquo;t have to use GitHub as a file storage system and could actually have a backend that would do all the conversion. However this method would need time to create, especially focusing on correction of faulty GLTF models. In addition I can avoid saving images directly onto the user&rsquo;s phone. </span></p>
+      <p class="c3"><span class="c6">Here I wouldn&rsquo;t have to use GitHub as a file storage system and could actually have a backend that would do all the conversion. However this method would need time to create, especially focusing on correction of faulty GlTF models. In addition I can avoid saving images directly onto the user&rsquo;s phone. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <a id="id.msxhs5osfmet"></a>
       <p class="c5"><span class="c20 c19">RESULTS</span></p>
       <hr>
-      <p class="c0"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">&lt;Insert convert img video here&gt;</span></p>
-      <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">&lt;insert entire demo here&gt;</span></p>
+	  <p class="c5"><span class="c6">Converting image to 3D model demo</span></p>
+      <p class="c5"><span class="c6"><video width="500" height="auto" controls><source src="images/convert_img_music.mp4" type="video/mp4"></video></span></p>
+      <p class="c5"><span class="c6"></span></p>
+      <p class="c5"><span class="c6"></span></p>
+      <p class="c5"><span class="c6">Entire Android app + image conversion demo</span></p>
+      <p class="c5"><span class="c6"><video width="500" height="auto" controls><source src="images/AR_sandbox aquarium_full_demo_video.mp4" type="video/mp4"></video></span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <a id="id.yr5h5k2wln6l"></a>
       <p class="c5"><span class="c20 c19">DISCUSSION</span></p>
@@ -605,7 +672,7 @@
       <p class="c3"><span class="c11">Extensions</span></p>
       <p class="c3"><span class="c6">The implementation that this project focuses on is a point cloud to triangular mesh. This opens a possibility to create more rounded 3D models by changing the image planes to be more rounded based on the distance of points that create the shape. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c15">So instead of the current flat surface, we would change the point cloud to be more rounded as seen in the Teddy Sketching interface created by Takeo Igarashi, Satoshi Matsuoka, Hidehiko Tanaka. </span><span class="c15 c21"><sup>[8]</sup></span><span class="c6">&nbsp;The further apart the opposing points are from each other would create more volume in between for the shape.</span></p>
+      <p class="c3"><span class="c15">So instead of the current flat surface, we would change the point cloud to be more rounded as seen in the Teddy Sketching interface created by Takeo Igarashi, Satoshi Matsuoka, Hidehiko Tanaka. </span><sup>[8]</sup><span class="c6">&nbsp;The further apart the opposing points are from each other would create more volume in between for the shape.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <a id="id.2ggb6y8sac4t"></a>
       <p class="c5"><span class="c20 c19">REFERENCES</span></p>
@@ -629,5 +696,12 @@
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c15">9. &ldquo;GrabCut.&rdquo; </span><span class="c15 c28">Wikipedia</span><span class="c6">, Wikimedia Foundation, 18 Dec. 2019. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
+      <p class="c3"><span class="c15">10. &ldquo;GlTF Documentation and Open Source library&rdquo; </span><span class="c15 c28">KhronosGroup</span><span class="c6">, KhronosGroup, Oct. 2016. </span></p>
+      <p class="c3 c4"><span class="c6"></span></p>
+	  <p class="c3"><span class="c6">11. Michael Kazhdan, Matthew Bolitho, and Hugues Hoppe. 2006. Poisson surface reconstruction. In Proceedings of the fourth Eurographics symposium on Geometry processing (SGP '06). Eurographics Association, Goslar, DEU, 61–70. </span></p>
+	  <p class="c3 c4"><span class="c6"></span></p>
+      
+
+
    </body>
 </html>
