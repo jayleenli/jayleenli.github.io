@@ -454,18 +454,18 @@
       <p class="c5"><span class="c20 c19">DESIGN</span></p>
       <hr>
       <p class="c0"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">The following diagram is how the original idea was meant to be. However the actual end product isn&rsquo;t exactly as described as there were some difficulties faced regarding the flow between 3D objects to Android.</span></p>
+      <p class="c3"><span class="c6">The following diagram is how the original idea was intended to be. However the actual end product isn&rsquo;t exactly as described as there were some difficulties faced regarding the flow between 3D objects to Android.</span></p>
       <center>
          <p class="c5"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 706.50px; height: 87.08px;"><img alt="" src="images/image1.png" style="width: 706.50px; height: 87.08px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
          <p class="c5"><span class="c25">Fig 2. Application flow</span></p>
          <p class="c3 c4"><span class="c6"></span></p>
       </center>
-      <p class="c3"><span class="c6">The 3D object will be a basic extrusion of the 2D image, like so:</span></p>
+      <p class="c3"><span class="c6">The 3D object will be a simple extrusion of the 2D image, like so:</span></p>
       <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 516.50px; height: 208.66px;"><img alt="" src="images/image18.png" style="width: 516.50px; height: 208.66px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
       <p class="c5"><span class="c25">Fig 3. Image extrusion</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c31 c28">Tech stack:</span><span class="c6">&nbsp;Android app (Java), Python</span></p>
-      <p class="c3"><span class="c31 c28">Libraries:</span><span class="c6">&nbsp;ARCore, Sceneform, OpenCV, Open3D</span></p>
+      <p class="c3"><span class="c31 c28">Libraries:</span><span class="c6">&nbsp;ARCore, Sceneform, OpenCV, Open3d</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c31 c28">Code</span><span class="c15">: </span><span class="c10"><a class="c18" href="https://www.google.com/url?q=https://github.com/jayleenli/AR-Sandbox-Aquarium&amp;sa=D&amp;source=editors&amp;ust=1615778021667000&amp;usg=AOvVaw3p6MaFizN40iPo0RGMpnTl">GitHub</a></span></p>
       <p class="c3"><span class="c28 c31">Android App APK</span><span class="c15">: </span><span class="c10"><a class="c18" href="https://www.google.com/url?q=https://drive.google.com/file/d/1ZGoCBshJ29IEH8p6sca_Y9-zTnaTW-9S/view?usp%3Dsharing&amp;sa=D&amp;source=editors&amp;ust=1615778021667000&amp;usg=AOvVaw2do7OjKBcjUvaHsuRKzA8l">Google Drive</a></span></p>
@@ -474,10 +474,10 @@
       <p class="c5"><span class="c20 c19">PROCESS AND IMPLEMENTATION</span></p>
       <hr>
       <p class="c0"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">This section will go into detail of how the project was created into two sections: 2D to 3D Conversion Algorithm and Android App. Once the 2D to 3D conversion was complete, the later part was focused on tying everything together.</span></p>
+      <p class="c3"><span class="c6">This section will go into detail of how the project was created into two sections: 2D to 3D Conversion Algorithm and Android App. Once the 2D to 3D conversion was complete, the later part of the project was focused on tying everything together.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c12">1. 2D to 3D Conversion Algorithm</span></p>
-      <p class="c3"><span class="c6">The processing from a 2D image to 3D was done with Python since the support for the &nbsp;3D community is stronger compared to Java. This could still tie into the Android app as described in the &ldquo;Issues and Possible Fixes&rdquo; section. &nbsp;</span></p>
+      <p class="c3"><span class="c6">The processing from a 2D image to 3D was done with Python since the support for the &nbsp;3D community is stronger than compared to Java. This could still tie into the Android app as described in the &ldquo;Issues and Possible Fixes&rdquo; section. &nbsp;</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">Note that I made the assumption that images inputted would always be drawn on a white background so I tailored certain aspects of the algorithm to take advantage of this.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
@@ -535,19 +535,19 @@
       <p class="c3"><span class="c8">Triangular Mesh Reconstruction</span></p>
       <p class="c3"><span class="c6">Three methods were investigated to experiment which point cloud -&gt; triangular mesh algorithm would work best for this project&rsquo;s use case. In the project we chose the third option but I will briefly explain all of them and compare them.</span></p>
       <ol class="c29 lst-kix_rue7egkl5quc-0 start" start="1">
-         <li class="c3 c17 li-bullet-0"><span class="c15">OBJ files + Delaunay Triangulation + Manual Mapping</span><sup>[1]</sup></li>
+         <li class="c3 c17 li-bullet-0"><span class="c15">OBJ files + Delaunay Triangulation <sup>[1]</sup> + Manual Mapping</span></li>
          <li class="c3 c17 li-bullet-0"><span class="c15">Ball-Pivoting Algorithm </span><sup>[2]</sup></li>
          <li class="c3 c17 li-bullet-0"><span class="c15">Poisson Surface Reconstruction </span><sup>[3]</sup></li>
       </ol>
       <p class="c3"><span class="c6"><br>For options 2 and 3, GlTF files were chosen as the export object model because it was simpler to convert the texture mappings to GlTF than other investigated object formats (.ply, .obj, .stl). Resulting object files were also scaled down by a factor of 0.0005 to match the measuring system of ARCore.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">GlTF is a 3D object file type formated in JSON that maps textures encoded from base64 designed as a more efficient way to transmit 3D files over networks. The top of the JSON tree describes the scene and node of the object and attributes like, mesh, accessors, bufferviews, and buffers, work together to define the entirety of the model. Textures and buffers can be defined separately from the GlTF file but can be encoded into the same file. <sup>[10]</sup> In our case, we did not use GlTF's defined material and texture attributes to create the models, everything was defined using buffers, bufferViews, and accessors.</span></p>
+      <p class="c3"><span class="c6"><a href="https://github.com/KhronosGroup/glTF" target="_blank">GlTF</a> is a 3D object file type formated in JSON that maps textures encoded from base64 designed as a more efficient way to transmit 3D files over networks. The top of the JSON tree describes the scene and node of the object and attributes like, mesh, accessors, bufferviews, and buffers, work together to define the entirety of the model. Textures and buffers can be defined separately from the GlTF file but can be encoded into the same file. <sup>[10]</sup> In our case, we did not use GlTF's defined material and texture attributes to create the models, everything was defined using buffers, bufferViews, and accessors.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c11">OBJ files + Delaunay Triangulation + Manual Mapping</span>
 
       <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 144.30px; height: 216.45px;"><img alt="" src="images/image16.png" style="width: 144.30px; height: 216.45px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p><span class="c15">Delaunay triangulation is an algorithm where given a set of points in a plane there is a triangulation that can be created such that no point inside the plane is inside the circumcircle of another triangle within the same triangulation. </span><sup>[1]</sup></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">The wavefront .obj file format &nbsp;has a very straightforward format. Vertices are represented like so (x, y, z [,w]). Where the square brackets indicate the attribute is optional.</span></p>
+      <p class="c3"><span class="c6">The wavefront .obj file format &nbsp;is very straightforward. Vertices are represented like so (x, y, z [,w]). Where the square brackets indicate the attribute is optional.</span></p>
       <p class="c23"><span class="c19 c26">v 0.123 0.234 0.345 1.0</span></p>
       <p class="c3"><span class="c6">Polygon faces are defined like so (triangles only).</span></p>
       <p class="c23"><span class="c26 c19">f 1 2 3</span></p>
@@ -563,7 +563,7 @@
       <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 347.00px; height: 234.60px;"><img alt="" src="images/image8.png" style="width: 347.00px; height: 234.60px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
       <p class="c5"><span class="c6">Fig 12. Undesirable fish object triangulation</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">I believe this method would work if there was a better triangulation algorithm. The pros that these models have is that they would be of the smallest file size. However other methods were pursued for this project in favor of simpler methods.</span></p>
+      <p class="c3"><span class="c6">I believe this method would work if there was a better triangulation algorithm for our use case. Another way to solve the problem is simply to add another iteration on top of Delaunay to remove all triangulars generated outside of the bounding shape of the object. The pros of this method is that the objects generated would be of the smallest file size. However other methods were pursued for this project in favor of more straightforward methods.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c11">Ball-Pivoting Algorithm</span></p>
       <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 261.50px; height: 197.35px;"><img alt="" src="images/image14.png" style="width: 261.50px; height: 197.35px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c6">Essentially the Ball-Pivoting Algorithm, (BPA) simulates the use of a virtual ball to generate a mesh from a given point cloud describing the surface of some 3D object. This ball will &ldquo;roll&rdquo; across the point cloud surface based on a given radius and will catch between points and create triangles until all points are exhausted. A ball radius of 2*average point distance was chosen.</span></p>
@@ -583,12 +583,12 @@
       <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 278.00px; height: 207.12px;"><img alt="" src="images/poisson.gif" style="width: 278.00px; height: 207.12px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
       <p class="c5"><span class="c6">Fig 16. Clownfish object Poisson surface reconstruction </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">The Poisson formulation considers all the points at once, without resorting to heuristic spatial partitioning or blending, and is therefore highly resilient to data noise. <sup>[11]</sup> The Poisson "blanket" was the best choice for the way we defined our point cloud  because our point cloud had a lot of space in between and needs an algorithm that is able to interpret the intention from the missing points. Poisson reconstruction still leaves some artifacts but overall produced a very smooth object that fits the organic style of a drawing.</span></p>
+      <p class="c3"><span class="c6">The Poisson formulation considers all the points at once, without resorting to heuristic spatial partitioning or blending, and is therefore highly resilient to data noise. <sup>[11]</sup> The Poisson "blanket" was the best choice for the way we defined our point cloud  because our point cloud had a lot of space in between and needs an algorithm that is able to interpret the shape of the object from the missing points. Poisson reconstruction still leaves some artifacts but overall produced a very smooth object that fits the organic style of a drawing.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c12">2. Android App</span></p>
       <p class="c3"><span class="c6">In the beginning I started with just ARCore and JavaGL but later moved the app part to Sceneform for ease of instant object placement within the AR scene. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">Sceneform can only load either GlTF or GLB 3D object files at runtime. Both file formats were designed for run time 3D content loading. GLB is just a little-endian binary version of GlTF (but is actually stored in hex). It was created to minimize and combine separated buffer and texture data from GLTF files into one file. <sup>[10]</sup> I choose GLB over GlTF because of an issue mentioned in the &ldquo;Issues and Possible Fixes&rdquo; section. However, the conversion algorithm can only convert to GlTF so I had to convert them into GLB afterwards so that they would load into Sceneform.</span></p>
+      <p class="c3"><span class="c6">Sceneform can only load either GlTF or GLB 3D object files at runtime. Both file formats were designed for run time 3D content loading. GLB is just a little-endian binary version of GlTF (but is actually stored in hex). It was created to minimize and combine separated buffer and texture data from GLTF files into one file. <sup>[10]</sup> I choose GLB over GlTF because of an issue mentioned in the &ldquo;Issues and Possible Fixes&rdquo; section. However, the conversion algorithm can only convert to GlTF so I had to convert the files into GLB afterwards to load into Sceneform.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">Currently the app implementation is not as desired. I wanted to have the user be able to take an image from their phone and do real time image conversion into a 3D model and save the model on the cloud for immediate use within the AR scene. Instead, conversion is done offline and models are manually uploaded to Github, which is acting as a free version of a cloud upload service.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
@@ -635,19 +635,19 @@
       <p class="c3"><span class="c11">Bug in point cloud to 3D object conversion</span></p>
       <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 159.50px; height: 312.16px;"><img alt="" src="images/image5.png" style="width: 159.50px; height: 312.16px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c6">The open3d conversion from a triangle mesh to an object actually creates a faulty GlTF file. So when this is opened in Windows 3D viewer it looks great but once the same models are loaded into sceneform they become red and black.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">The workaround here was actually converting these GlTF models into GLB file type. However a direct transformation was not viable as converting the GlTF file to a GLB file directly would also be faulty. I tried to figure out why this was the case and it traces back to certain GlTF buffers set to values outside of their maximum range. A workaround was to open the file in Windows 3D viewer and then save the file as a GLB type as 3D Viewer does some model corrections behind the scenes. You will see this in the video demo in the &ldquo;Results&rdquo; section.</span></p>
+      <p class="c3"><span class="c6">The workaround here was actually converting these GlTF models into GLB file type. However a direct transformation was not viable as converting the GlTF file to a GLB file directly would also be faulty. I tried to figure out why this was the case and it traces back to certain GlTF buffers set to values outside of their maximum range.  A workaround was to open the file in Windows 3D viewer and then save the file as a GLB type as 3D Viewer does some model corrections behind the scenes. You will see this in the video demo in the &ldquo;Results&rdquo; section.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c11">Conversion is not seamless</span></p>
       <p class="c3"><span class="c6">The original intention of this project was to make the conversion seamless for the user within the app. However due to the problem mentioned above, it was not possible in the timeframe of this project. I did come up with a design that would work assuming the faulty GlTF files could be fixed. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">To make a seamless conversion, the 2D to 3D conversion should be set up as a basic web server serving a few endpoints</span></p>
+      <p class="c3"><span class="c6">To make a seamless conversion, the 2D to 3D conversion should be set up as a basic web server serving a few endpoints:</span></p>
       <ul class="c29 lst-kix_888o7ou4f534-0 start">
          <li class="c3 c17 li-bullet-0"><span class="c6">GET endpoint to get the current list of models</span></li>
          <li class="c3 c17 li-bullet-0"><span class="c6">GET endpoint to get a specific GLB model</span></li>
          <li class="c3 c17 li-bullet-0"><span class="c6">POST endpoint to upload an image, and returns a GLB model of image</span></li>
       </ul>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">Here I wouldn&rsquo;t have to use GitHub as a file storage system and could actually have a backend that would do all the conversion. However this method would need time to create, especially focusing on correction of faulty GlTF models. In addition I can avoid saving images directly onto the user&rsquo;s phone. </span></p>
+      <p class="c3"><span class="c6">Here I wouldn&rsquo;t have to use GitHub as a file storage system and could actually have a backend that would do all the conversion. However this method would need time to create, and would require significant analysis into correcting faulty GlTF models. In addition, I can avoid saving images directly onto the user&rsquo;s phone. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <a id="id.msxhs5osfmet"></a>
       <p class="c5"><span class="c20 c19">RESULTS</span></p>
@@ -670,9 +670,9 @@
       <p class="c3"><span class="c6">While exploring, it seems like many CAD programs already have some algorithm behind the scenes that does efficient triangulation of 2D planes into flat 3D planes which can later be extruded. Windows Builder actually has such a feature that works fairly well. These programs may possibly use the techniques stated but these algorithms are hidden from the public. There are also few conversion APIs out there related to 3D objects. Through this project I&#39;ve noticed such a gap and hope that in the future there will be more work to make these methods more open sourced to the public as this project aimed to do. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c11">Extensions</span></p>
-      <p class="c3"><span class="c6">The implementation that this project focuses on is a point cloud to triangular mesh. This opens a possibility to create more rounded 3D models by changing the image planes to be more rounded based on the distance of points that create the shape. </span></p>
+      <p class="c3"><span class="c6">The implementation that this project highlights is from point cloud to triangular mesh. This opens a possibility to create more rounded 3D models by changing the image planes to be more rounded based on the distance of points that create the shape. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c15">So instead of the current flat surface, we would change the point cloud to be more rounded as seen in the Teddy Sketching interface created by Takeo Igarashi, Satoshi Matsuoka, Hidehiko Tanaka. </span><sup>[8]</sup><span class="c6">&nbsp;The further apart the opposing points are from each other would create more volume in between for the shape.</span></p>
+      <p class="c3"><span class="c15">So instead of the current flat surface, the point cloud could be more rounded as seen in the Teddy Sketching interface created by Takeo Igarashi, Satoshi Matsuoka, Hidehiko Tanaka. </span><sup>[8]</sup><span class="c6">&nbsp;The further apart the opposing points are from each other, the more volume in between for the shape.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <a id="id.2ggb6y8sac4t"></a>
       <p class="c5"><span class="c20 c19">REFERENCES</span></p>
