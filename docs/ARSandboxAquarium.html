@@ -437,7 +437,7 @@
       <p class="c5"><span class="c19 c20">OVERVIEW</span></p>
       <hr>
       <p class="c0"><span class="c20 c19"></span></p>
-      <p class="c3"><span class="c6">Decorate your room in an augmented reality space with a 3D version of your 2D drawings. Simply draw a 2D object on a sheet of white paper and take a photo with it from your phone and the backend will transform that drawing into a 3D model you can place into your room. The project is centered around an aquatic theme because the original idea came from an aquarium, hence the title. However, this project can be applied to a general setting of converting 2D images into 3D objects.</span></p>
+      <p class="c3"><span class="c6">Decorate your room in an augmented reality space with a 3D version of your 2D drawings. Simply draw a 2D object on a sheet of white paper and take a photo of it from your phone and the backend will transform that drawing into a 3D model you can place into your room. The project is centered around an aquatic theme because the original idea came from an aquarium, hence the title. However, this project can be applied to a general setting of converting 2D images into 3D objects.</span></p>
       <p class="c1"><span class="c6"></span></p>
       <a id="id.xg05ly78bry3"></a>
       <p class="c5"><span class="c20 c19">MOTIVATION</span></p>
@@ -477,7 +477,7 @@
       <p class="c3"><span class="c6">This section will go into detail of how the project was created into two sections: 2D to 3D Conversion Algorithm and Android App. Once the 2D to 3D conversion was complete, the later part of the project was focused on tying everything together.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c12">1. 2D to 3D Conversion Algorithm</span></p>
-      <p class="c3"><span class="c6">The processing from a 2D image to 3D was done with Python since the support for the &nbsp;3D community is stronger than compared to Java. This could still tie into the Android app as described in the &ldquo;Issues and Possible Fixes&rdquo; section. &nbsp;</span></p>
+      <p class="c3"><span class="c6">The processing from a 2D image to 3D was done with Python since the support for the &nbsp;3D community is stronger in Python compared to Java. This could still tie into the Android app as described in the &ldquo;Issues and Possible Fixes&rdquo; section. &nbsp;</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">Note that I made the assumption that images inputted would always be drawn on a white background so I tailored certain aspects of the algorithm to take advantage of this.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
@@ -488,7 +488,7 @@
       <p class="c3"><span class="c8">Preparing the 2D Image</span></p>
       <p class="c3"><span class="c15">The core part of this section was OpenCV&rsquo;s GrabCut algorithm. GrabCut segments an image by graph cuts into a foreground and background. </span><sup>[9]</sup><span class="c6">&nbsp;To detect the 2D object to convert, the GrabCut foreground graph cut was selected.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c15">To speed up the algorithm, the original image is first scaled down to a maximum of 640000 total pixels. Then the image is thresholded so that pixels with a color value &gt;= 180 for all three RGB values would be automatically set as background for the GrabCut algorithm to cut more accurately. Thresholding at this value also helped with variability of external lighting factors. I noticed through testing that 180 was a good value in general but worked best with moderately poor lighting. Previously without the thresholding, the GrabCut algorithm performed poorly for detecting the active object within the paper.</span></p>
+      <p class="c3"><span class="c15">To speed up the algorithm, the original image is first scaled down to a maximum of 640000 total pixels. Then the image is thresholded so that pixels with a color value &gt;= 180 for all three RGB values would be automatically set as background for the GrabCut algorithm to cut more accurately. Thresholding at this value also helped with variability of external lighting factors. I noticed through testing that 180 was a good value in general but worked best with poor lighting. Previously without the thresholding, the GrabCut algorithm performed poorly for detecting the active object within the paper.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c1"><span class="c6"></span></p>
       <p class="c5 grid">
@@ -501,7 +501,7 @@
       <p class="c3 c4"><span class="c8"></span></p>
 
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">The goal of the GrabCut algorithm was to retrieve the outline of the object from OpenCV&rsquo;s contouring library. The image was then converted to binary to contour and one iteration of erosion was applied to smooth out the edges of the object. Note, the contour isn&rsquo;t perfect due susceptibility of the image to external environmental lighting. Depending on the lighting of the image taken, different contours can be produced.</span></p>
+      <p class="c3"><span class="c6">The goal of the GrabCut algorithm was to retrieve the outline of the object from OpenCV&rsquo;s contouring library. The image was then converted into a binary version in order to contour and one iteration of erosion was applied to smooth out the edges of the object. Note that the contour isn&rsquo;t perfect due to the susceptibility of the image to external environmental lighting. Depending on the lighting of the image taken, different contours can be produced.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">The eroded contours were smoothed with openCV and this became the contour used for the rest of the algorithm. Since there could be multiple objects within the frame, only the largest contoured object was retrieved to create the object.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
@@ -517,7 +517,7 @@
 
       <p class="c3 c4"><span class="c8"></span></p>
       <p class="c3"><span class="c12">Creating the Point Cloud</span></p>
-      <p class="c3"><span class="c15">All points inside the contour were mapped to their corresponding pixels from the image and was formatted into a 3D point cloud. Because of internal OpenCV functions, the resulting points were rotated 180 degrees around the x axis, giving an &ldquo;upside-down&rdquo; image. This is later corrected using open3d&rsquo;s rotation library. To achieve the desired extruded image shape as described in </span><span class="c15">Fig 3</span><span class="c6">, the set of points of the object were copied onto two planes that were a distance of 10 pixels from each other. Normals were set in opposite directions for each plane respectively. Normals were necessary for the Ball-Pivoting Algorithm and Poisson algorithms.</span></p>
+      <p class="c3"><span class="c15">All points inside the contour were mapped to their corresponding pixels from the image and was formatted into a 3D point cloud. Because of internal OpenCV functions, the resulting points were rotated 180 degrees around the x axis, giving an &ldquo;upside-down&rdquo; image. This is later corrected using open3d&rsquo;s rotation library. To achieve the desired extruded image shape as described in </span><span class="c15">Fig 3</span><span class="c6">, the set of points of the object were copied onto two planes that were a distance of 10 pixels from each other. Normals were set in opposite directions for each plane respectively. Normals were necessary for the Ball-Pivoting and Poisson algorithms.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
 
 
@@ -541,7 +541,7 @@
       </ol>
       <p class="c3"><span class="c6"><br>For options 2 and 3, GlTF files were chosen as the export object model because it was simpler to convert the texture mappings to GlTF than other investigated object formats (.ply, .obj, .stl). Resulting object files were also scaled down by a factor of 0.0005 to match the measuring system of ARCore.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6"><a href="https://github.com/KhronosGroup/glTF" target="_blank">GlTF</a> is a 3D object file type formated in JSON that maps textures encoded from base64 designed as a more efficient way to transmit 3D files over networks. The top of the JSON tree describes the scene and node of the object and attributes like, mesh, accessors, bufferviews, and buffers, work together to define the entirety of the model. Textures and buffers can be defined separately from the GlTF file but can be encoded into the same file. <sup>[10]</sup> In our case, we did not use GlTF's defined material and texture attributes to create the models, everything was defined using buffers, bufferViews, and accessors.</span></p>
+      <p class="c3"><span class="c6"><a href="https://github.com/KhronosGroup/glTF" target="_blank">GlTF</a> is a 3D object file type formated in JSON that maps textures encoded from base64 designed as a more efficient way to transmit 3D files over networks. The top of the JSON tree describes the scene and node of the object and attributes like, mesh, accessors, bufferViews, and buffers, work together to define the entirety of the model. Textures and buffers can be defined separately from the GlTF file but can be encoded into the same file. <sup>[10]</sup> In our case, we did not use GlTF's defined material and texture attributes to create the models; instead, everything was defined using buffers, bufferViews, and accessors.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c11">OBJ files + Delaunay Triangulation + Manual Mapping</span>
 
@@ -553,7 +553,7 @@
       <p class="c23"><span class="c26 c19">f 1 2 3</span></p>
       <p class="c3"><span class="c15">Where each number after f defines the three points by index number in the file of the triangular face. </span><sup>[4]</sup></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">The idea here was to grab all vertices along the edge of the contoured edge and perform the Delaunay algorithm onto the set of points and create the minimum required number of triangular faces for one of the object planes and convert into the OBJ 3D object file format. </span></p>
+      <p class="c3"><span class="c6">The idea here was to grab all vertices along the contoured edge and perform the Delaunay algorithm onto the set of points and create the minimum required number of triangular faces for one of the object planes and convert into the OBJ 3D object file format. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 336.00px; height: 179.00px;"><img alt="" src="images/image7.png" style="width: 336.00px; height: 179.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span> <span class="c6">Afterwards, we would replicate this plane and then create more triangular faces to connect both planes at their edges in a zigzag format (shown in Fig 11). </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
@@ -563,7 +563,7 @@
       <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 347.00px; height: 234.60px;"><img alt="" src="images/image8.png" style="width: 347.00px; height: 234.60px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
       <p class="c5"><span class="c6">Fig 12. Undesirable fish object triangulation</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c6">I believe this method would work if there was a better triangulation algorithm for our use case. Another way to solve the problem is simply to add another iteration on top of Delaunay to remove all triangulars generated outside of the bounding shape of the object. The pros of this method is that the objects generated would be of the smallest file size. However other methods were pursued for this project in favor of more straightforward methods.</span></p>
+      <p class="c3"><span class="c6">I believe this method would work if there was a better triangulation algorithm for our use case. Another way to solve the problem is simply to add another iteration on top of Delaunay to remove all triangulars generated outside of the bounding shape of the object. The pros of this method is that the objects generated would be of the smallest file size. However other methods were pursued for this project that were more straightforward.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c11">Ball-Pivoting Algorithm</span></p>
       <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 261.50px; height: 197.35px;"><img alt="" src="images/image14.png" style="width: 261.50px; height: 197.35px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c6">Essentially the Ball-Pivoting Algorithm, (BPA) simulates the use of a virtual ball to generate a mesh from a given point cloud describing the surface of some 3D object. This ball will &ldquo;roll&rdquo; across the point cloud surface based on a given radius and will catch between points and create triangles until all points are exhausted. A ball radius of 2*average point distance was chosen.</span></p>
@@ -575,7 +575,7 @@
       <p class="c5"><span class="c6">Fig 14. Undesirable BPA fish object triangulation</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c11">Poisson Surface Reconstruction</span></p>
-      <p class="c3"><span class="c6">This reconstitution algorithm takes all data points at once and interprets the points as a spatial Poisson problem. On a high level, it considers all points at once and places a &ldquo;blanket&rdquo; onto the points to create the mesh. The higher the depth specified, the more fine details would be exposed from the &ldquo;blanket.&rdquo; In our purposes, a depth of 8 was chosen. </span></p>
+      <p class="c3"><span class="c6">This reconstitution algorithm takes all data points at once and interprets the points as a spatial Poisson problem. On a high level, it considers all points at once and places a &ldquo;blanket&rdquo; onto the points to create the mesh. The higher the depth specified, the more fine details would be exposed from the &ldquo;blanket.&rdquo; For these purposes, a depth of 8 was chosen. </span></p>
       <p class="c5"><span style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 431.00px; height: 188.72px;"><img alt="" src="images/image10.png" style="width: 431.00px; height: 188.72px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span></p>
       <p class="c5"><span class="c6">Fig 15. Example of Poisson Surface Reconstruction </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
@@ -586,7 +586,7 @@
       <p class="c3"><span class="c6">The Poisson formulation considers all the points at once, without resorting to heuristic spatial partitioning or blending, and is therefore highly resilient to data noise. <sup>[11]</sup> The Poisson "blanket" was the best choice for the way we defined our point cloud  because our point cloud had a lot of space in between and needs an algorithm that is able to interpret the shape of the object from the missing points. Poisson reconstruction still leaves some artifacts but overall produced a very smooth object that fits the organic style of a drawing.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c12">2. Android App</span></p>
-      <p class="c3"><span class="c6">In the beginning I started with just ARCore and JavaGL but later moved the app part to Sceneform for ease of instant object placement within the AR scene. </span></p>
+      <p class="c3"><span class="c6">In the beginning I started with just ARCore and JavaGL but later moved the app to Sceneform for ease of instant object placement within the AR scene. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">Sceneform can only load either GlTF or GLB 3D object files at runtime. Both file formats were designed for run time 3D content loading. GLB is just a little-endian binary version of GlTF (but is actually stored in hex). It was created to minimize and combine separated buffer and texture data from GLTF files into one file. <sup>[10]</sup> I choose GLB over GlTF because of an issue mentioned in the &ldquo;Issues and Possible Fixes&rdquo; section. However, the conversion algorithm can only convert to GlTF so I had to convert the files into GLB afterwards to load into Sceneform.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
@@ -612,7 +612,7 @@
       </p>
 
       <p class="c3 c4"><span class="c6"></span></p>
-      <p class="c3"><span class="c15">I will explain in the next section some issues I ran into with the Android app implementation and ways I was able to go around or or if I couldn&#39;t, ideas of how these issues could be circumvented. </span></p>
+      <p class="c3"><span class="c15">I will explain in the next section some issues I ran into with the Android app implementation and ways I was able to go around or if I couldn&#39;t, ideas of how these issues could be circumvented. </span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <a id="id.eujt0jdnhuzj"></a>
       <p class="c5"><span class="c20 c19">ISSUES AND POSSIBLE FIXES</span></p>
@@ -633,7 +633,7 @@
       <p class="c3 c4"><span class="c8"></span></p>
 
       <p class="c3"><span class="c11">Bug in point cloud to 3D object conversion</span></p>
-      <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 159.50px; height: 312.16px;"><img alt="" src="images/image5.png" style="width: 159.50px; height: 312.16px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c6">The open3d conversion from a triangle mesh to an object actually creates a faulty GlTF file. So when this is opened in Windows 3D viewer it looks great but once the same models are loaded into sceneform they become red and black.</span></p>
+      <p class="c3"><span style="overflow: hidden; float:right; padding-left: 10px; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 159.50px; height: 312.16px;"><img alt="" src="images/image5.png" style="width: 159.50px; height: 312.16px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></span><span class="c6">The open3d conversion from a triangle mesh to an object actually creates a faulty GlTF file. So when this is opened in Windows 3D viewer it looks great but once the same models are loaded into Sceneform they become red and black.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
       <p class="c3"><span class="c6">The workaround here was actually converting these GlTF models into GLB file type. However a direct transformation was not viable as converting the GlTF file to a GLB file directly would also be faulty. I tried to figure out why this was the case and it traces back to certain GlTF buffers set to values outside of their maximum range.  A workaround was to open the file in Windows 3D viewer and then save the file as a GLB type as 3D Viewer does some model corrections behind the scenes. You will see this in the video demo in the &ldquo;Results&rdquo; section.</span></p>
       <p class="c3 c4"><span class="c6"></span></p>
