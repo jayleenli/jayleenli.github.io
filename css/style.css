@@ -252,7 +252,7 @@ figure {
 
 #colorlib-hero {
   min-height: 500px;
-  /*background: #fff no-repeat center center;*/
+  background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left;
   clear: both; }
