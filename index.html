@@ -65,14 +65,15 @@
 				<div id="navbar" class="collapse">
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home" style="font-size: 16px;">Home</a></li>
-						<!--li><a href="#" data-nav-section="about">About</a></li-->
-						<!--li><a href="#" data-nav-section="skills">Skills</a></li-->
-						<!--li><a href="#" data-nav-section="education">Education</a></li-->
 						<li><a href="#" data-nav-section="experience" style="font-size: 16px;">Experience</a></li>
-						<li><a href="#" data-nav-section="work" style="font-size: 16px;">Work</a></li>
+						<li><a href="#" data-nav-section="showcase" style="font-size: 16px;">Work Showcase</a></li>
 						<!-- <li><a href="art.html" target="_self" style="font-size: 16px;">Art (WIP)</a></li> -->
 						<li><a href="#" data-nav-section="photos" style="font-size: 16px;">Photos</a></li>
-						<!--li><a href="#" data-nav-section="services">Services</a></li-->
+                        <hr width="50%" class="navbar-divider" align="center">
+                        <li><a href="publications.html" target="_self" class="external" style="font-size: 16px;">"Publications" (WIP)</a></li>
+                        <li><a href="art.html" target="_self" class="external" style="font-size: 16px;">3D Art (WIP)</a></li>
+                        <li><a href="spreadsheets.html" target="_self" class="external" style="font-size: 16px;">Spreadsheets (WIP)</a></li>
+                        
 					</ul>
 				</div>
 			</nav>
@@ -89,8 +90,8 @@
 		</aside>
 
 		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div class="flexslider js-fullheight">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home" >
+				<div class="flexslider js-fullheight" id="home">
 					<ul class="slides">
 				   	<li style="background-image: url(images/home3.JPG);">
 				   		<div class="overlay"></div>
@@ -112,8 +113,6 @@
 				    </ul>
 			  	</div>
 			</section>
-
-			<!-- Unused assests section 1 -->
 			
 			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg.JPG);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
@@ -140,27 +139,41 @@
 					</div>
 				</div>
 			</div>
-			<!-- Unused assests section 2 -->
 
-			<section class="colorlib-experience" data-section="experience">
+			<section class="colorlib-experience" data-section="experience" id="experience">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
 							<h2 class="colorlib-heading animate-box">Work Experience</h2>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 				         <div class="timeline-centered">
+                            
+                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-2">
+					                  <i class="icon-briefcase3"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#" target="_blank">Software Engineer at Cisco Meraki</a> <span>Feb 2023 - Present</span></h2>
+					                  <p> Currently working on the MR Insight Team. MR is Meraki's enterprise Access Point product. Tech stack: Ruby, React.
+									  </p>
+					               </div>
+					            </div>
+					         </article>
+                         
 				         	<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-3">
 					                  <i class="icon-briefcase3"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#" target="_blank"> Prisma Access Software Engineer at Palo Alto Networks</a> <span>Aug 2021 - Present</span></h2>
-					                  <p> Currently working full time on the Prisma Access Insights team! Tech stack: Java Microservices, GCP pub/sub, BigQuery, CloudSQL, Python.
+					               	<h2><a href="#" target="_blank"> Prisma Access Software Engineer at Palo Alto Networks</a> <span>Aug 2021 - Feb 2023</span></h2>
+					                  <p> Worked on the Prisma Access Insights team! Tech stack: Java Microservices, GCP pub/sub, BigQuery, CloudSQL, Python.
 									  </p>
 					               </div>
 					            </div>
@@ -272,7 +285,7 @@
 				</div>
 			</section>
 
-			<section class="colorlib-work" data-section="work">
+			<section class="colorlib-work" data-section="showcase" id="showcase">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -1067,7 +1080,7 @@
 			</section>
 
 			<!------------------------------- PHOTO GALLERY SECTION BEGIN ---------------------------->
-			<section class="colorlib-photos" data-section="photos">
+			<section class="colorlib-photos" data-section="photos" id="photos">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -1125,7 +1138,7 @@
 		
 
 		<!--footer>
-			<p>Made on github with colorlib.com template</p>
+			<p>Remixed Jackson colorlib template https://colorlib.com/wp/template/jackson/ by Jayleen Li</p>
 		</footer-->
 		</div><!-- end:colorlib-main -->
 	</div><!-- end:container-wrap -->
@@ -1152,4 +1165,3 @@
 
 	</body>
 </html>
-
