@@ -49,6 +49,14 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 3px solid #cccccc85 !important;
 }
 
+td {
+  vertical-align: top;
+}
+
+td:nth-child(1) {
+  padding-left: 20px;
+}
+
 figure {
   margin-bottom: 2.5em;
   float: left;
@@ -1601,7 +1609,7 @@ body.offcanvas {
 }
 
 .publications-th {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .media:hover .layer {
