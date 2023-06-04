@@ -65,14 +65,15 @@
 				<div id="navbar" class="collapse">
 					<ul>
 						<li class="active"><a href="#" data-nav-section="home" style="font-size: 16px;">Home</a></li>
-						<!--li><a href="#" data-nav-section="about">About</a></li-->
-						<!--li><a href="#" data-nav-section="skills">Skills</a></li-->
-						<!--li><a href="#" data-nav-section="education">Education</a></li-->
 						<li><a href="#" data-nav-section="experience" style="font-size: 16px;">Experience</a></li>
-						<li><a href="#" data-nav-section="work" style="font-size: 16px;">Work</a></li>
+						<li><a href="#" data-nav-section="showcase" style="font-size: 16px;">Work Showcase</a></li>
 						<!-- <li><a href="art.html" target="_self" style="font-size: 16px;">Art (WIP)</a></li> -->
 						<li><a href="#" data-nav-section="photos" style="font-size: 16px;">Photos</a></li>
-						<!--li><a href="#" data-nav-section="services">Services</a></li-->
+						<hr width="50%" class="navbar-divider" align="center">
+						<li><a href="publications.html" target="_self" class="external" style="font-size: 16px;">"Publications"</a></li>
+						<li><a href="art.html" target="_self" class="external" style="font-size: 16px;">3D Art (WIP)</a></li>
+						<li><a href="spreadsheets.html" target="_self" class="external" style="font-size: 16px;">Spreadsheets (WIP)</a></li>
+						
 					</ul>
 				</div>
 			</nav>
@@ -89,31 +90,29 @@
 		</aside>
 
 		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div class="flexslider js-fullheight">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home" >
+				<div class="flexslider js-fullheight" id="home">
 					<ul class="slides">
-				   	<li style="background-image: url(images/home3.JPG);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner js-fullheight">
-					   					<div class="desc">
-						   					<h1>Hi there! <br>I'm Jayleen Li.</h1>
-						   					<h2>I like to experiment and build new things. Recently been exploring the realm of 3D printing and 3D art :) </h2>
+					<li style="background-image: url(images/home.JPG);">
+						<div class="overlay"></div>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+									<div class="slider-text-inner js-fullheight">
+										<div class="desc">
+											<h1>Hi there! <br>I'm Jayleen Li.</h1>
+											<h2>I like to experiment and build new things. Recently been exploring the realm of 3D printing and 3D art :) </h2>
 											<p><a class="btn btn-primary btn-learn" href="docs/jayleenliresume.pdf" target="_blank">Resume <i class="icon-download4"></i></a>
 											<a class="btn btn-primary btn-learn" href="docs/jayleenlicv.pdf" target="_blank">CV (multiple pages) <i class="icon-download4"></i></a></p>
 											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				    </ul>
-			  	</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					</ul>
+				</div>
 			</section>
-
-			<!-- Unused assests section 1 -->
 			
 			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg.JPG);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
@@ -140,139 +139,153 @@
 					</div>
 				</div>
 			</div>
-			<!-- Unused assests section 2 -->
 
-			<section class="colorlib-experience" data-section="experience">
+			<section class="colorlib-experience" data-section="experience" id="experience">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
 							<h2 class="colorlib-heading animate-box">Work Experience</h2>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-				         <div class="timeline-centered">
-				         	<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-briefcase3"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#" target="_blank"> Prisma Access Software Engineer at Palo Alto Networks</a> <span>Aug 2021 - Present</span></h2>
-					                  <p> Currently working full time on the Prisma Access Insights team! Tech stack: Java Microservices, GCP pub/sub, BigQuery, CloudSQL, Python.
-									  </p>
-					               </div>
-					            </div>
-					        </article>
+						 <div class="timeline-centered">
+							
+							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+								<div class="timeline-entry-inner">
 
-				         	<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-7">
-					                  <i class="icon-briefcase3"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#" target="_blank"> Undergraduate Learning Assistant (Part-time)</a> <span>Mar 2021 - Jun 2021 </span></h2>
-					                  <p> Paid part time undergraduate learning assistant for CS148, Computer Science Project, where students learn about software development practices, testing, and software reliability. Students also build a self guided project together using techniques learned. 
-									  </p>
-					               </div>
-					            </div>
-					        </article>
+								   <div class="timeline-icon color-2">
+									  <i class="icon-briefcase3"></i>
+								   </div>
 
-				         	<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-6">
-					                  <i class="icon-briefcase3"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#" target="_blank"> CNG Full Stack Technical Intern at Cisco Meraki</a> <span>Sep 2020 - Dec 2020 </span></h2>
-					                  <p> Built cellular usage trackers and dashboard graphs for Meraki’s cellular gateway devices using Ruby, React, and Scala. 
+								   <div class="timeline-label">
+									  <h2><a href="#" target="_blank">Software Engineer at Cisco Meraki</a> <span>Feb 2023 - Present</span></h2>
+									  <p> Currently working on the MR Insight Team. MR is Meraki's enterprise Access Point product. Tech stack: Ruby, React.
 									  </p>
-					               </div>
-					            </div>
-					        </article>
-
-				         	<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-briefcase3"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#" target="_blank">Prisma Access Software Engineering Intern at Palo Alto Networks</a> <span>Jun 2020 - Sep 2020 </span></h2>
-					                  <p>Created a new framework in Python and AWS for customers to remotely run diagnostic commands on cloud firewalls and collect system info.
-					                  Placed 2nd in the company internal hackathon  by developing an application to bring awareness on publicly available information on social media that could be maliciously used in a social engineering attack.
+								   </div>
+								</div>
+							 </article>
+						 
+							<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+								<div class="timeline-entry-inner">
+								   <div class="timeline-icon color-3">
+									  <i class="icon-briefcase3"></i>
+								   </div>
+								   <div class="timeline-label">
+									<h2><a href="#" target="_blank"> Prisma Access Software Engineer at Palo Alto Networks</a> <span>Aug 2021 - Feb 2023</span></h2>
+									  <p> Worked on the Prisma Access Insights team! Tech stack: Java Microservices, GCP pub/sub, BigQuery, CloudSQL, Python.
 									  </p>
-					               </div>
-					            </div>
-					        </article>
+								   </div>
+								</div>
+							</article>
 
 							<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-briefcase3"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#" target="_blank">Software Engineering Intern at ADTRAN Inc.</a> <span>Aug 2019 - Dec 2019 </span></h2>
-					                  <p>Designed and developed a Python Flask web application hosted on Apache2 to give 25+ service providers the ability to upload, edit, and create version control of router manifest files through cloud services. 
+								<div class="timeline-entry-inner">
+								   <div class="timeline-icon color-7">
+									  <i class="icon-briefcase3"></i>
+								   </div>
+								   <div class="timeline-label">
+									<h2><a href="#" target="_blank"> Undergraduate Learning Assistant (Part-time)</a> <span>Mar 2021 - Jun 2021 </span></h2>
+									  <p> Paid part time undergraduate learning assistant for CS148, Computer Science Project, where students learn about software development practices, testing, and software reliability. Students also build a self guided project together using techniques learned. 
 									  </p>
-					               </div>
-					            </div>
-					         </article>
+								   </div>
+								</div>
+							</article>
 
-				         	<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-briefcase3"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#" target="_blank">Software Engineering Intern at Looker (Acquired by Google Cloud)</a> <span>Jun 2019 - Aug 2019</span></h2>
-					                  <p>Part of the Content Management in Engineering Team. Developed a customized REST URL naming system for Looker’s data analytic dashboards in Ruby, React and TypeScript. Also started on a <a href="lookerappvideo.html">Looker Pocket Edition Android app </a> at Looker’s internal hackathon.
-					                  </p>
-					               </div>
-					            </div>
-					         </article>
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-book"></i>
-					               </div>
-
-					               <div class="timeline-label">
-					                  <h2><a href="https://ilab.cs.ucsb.edu/" target="_blank">Undergraduate Research Assistant at UCSB</a> <span>Feb 2019 - Jun 2019</span></h2>
-					                  <p>Worked at the <a href="https://ilab.cs.ucsb.edu/" target="_blank">Four Eyes Lab</a> at UCSB to create a deep learning model to classify EEG (electroencephalogram) waves. </p>
-					               </div>
-					            </div>
-					         </article>
-
-
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-briefcase3"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="https://www.smartrg.com/" target="_blank">Software Development Intern at SmartRG</a> <span>Feb 2018 – Sep 2018</span></h2>
-					                  <p>Developed automatic language localization scripts in BASH and Python which translated SmartRG's User Interface in 20+ new languages. Also created a network packet capture interface for SmartRG's router UI with AngularJS and Cloudshark.
+							<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+								<div class="timeline-entry-inner">
+								   <div class="timeline-icon color-6">
+									  <i class="icon-briefcase3"></i>
+								   </div>
+								   <div class="timeline-label">
+									<h2><a href="#" target="_blank"> CNG Full Stack Technical Intern at Cisco Meraki</a> <span>Sep 2020 - Dec 2020 </span></h2>
+									  <p> Built cellular usage trackers and dashboard graphs for Meraki’s cellular gateway devices using Ruby, React, and Scala. 
 									  </p>
-					               </div>
-					            </div>
-					         </article>
+								   </div>
+								</div>
+							</article>
 
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      </div>
+							<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+								<div class="timeline-entry-inner">
+								   <div class="timeline-icon color-4">
+									  <i class="icon-briefcase3"></i>
+								   </div>
+								   <div class="timeline-label">
+									<h2><a href="#" target="_blank">Prisma Access Software Engineering Intern at Palo Alto Networks</a> <span>Jun 2020 - Sep 2020 </span></h2>
+									  <p>Created a new framework in Python and AWS for customers to remotely run diagnostic commands on cloud firewalls and collect system info.
+									  Placed 2nd in the company internal hackathon  by developing an application to bring awareness on publicly available information on social media that could be maliciously used in a social engineering attack.
+									  </p>
+								   </div>
+								</div>
+							</article>
+
+							<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+								<div class="timeline-entry-inner">
+								   <div class="timeline-icon color-5">
+									  <i class="icon-briefcase3"></i>
+								   </div>
+								   <div class="timeline-label">
+									<h2><a href="#" target="_blank">Software Engineering Intern at ADTRAN Inc.</a> <span>Aug 2019 - Dec 2019 </span></h2>
+									  <p>Designed and developed a Python Flask web application hosted on Apache2 to give 25+ service providers the ability to upload, edit, and create version control of router manifest files through cloud services. 
+									  </p>
+								   </div>
+								</div>
+							 </article>
+
+							<article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+								<div class="timeline-entry-inner">
+								   <div class="timeline-icon color-1">
+									  <i class="icon-briefcase3"></i>
+								   </div>
+								   <div class="timeline-label">
+									<h2><a href="#" target="_blank">Software Engineering Intern at Looker (Acquired by Google Cloud)</a> <span>Jun 2019 - Aug 2019</span></h2>
+									  <p>Part of the Content Management in Engineering Team. Developed a customized REST URL naming system for Looker’s data analytic dashboards in Ruby, React and TypeScript. Also started on a <a href="lookerappvideo.html">Looker Pocket Edition Android app </a> at Looker’s internal hackathon.
+									  </p>
+								   </div>
+								</div>
+							 </article>
+
+							 <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+								<div class="timeline-entry-inner">
+
+								   <div class="timeline-icon color-2">
+									  <i class="icon-book"></i>
+								   </div>
+
+								   <div class="timeline-label">
+									  <h2><a href="https://ilab.cs.ucsb.edu/" target="_blank">Undergraduate Research Assistant at UCSB</a> <span>Feb 2019 - Jun 2019</span></h2>
+									  <p>Worked at the <a href="https://ilab.cs.ucsb.edu/" target="_blank">Four Eyes Lab</a> at UCSB to create a deep learning model to classify EEG (electroencephalogram) waves. </p>
+								   </div>
+								</div>
+							 </article>
+
+
+							 <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+								<div class="timeline-entry-inner">
+								   <div class="timeline-icon color-3">
+									  <i class="icon-briefcase3"></i>
+								   </div>
+								   <div class="timeline-label">
+									<h2><a href="https://www.smartrg.com/" target="_blank">Software Development Intern at SmartRG</a> <span>Feb 2018 – Sep 2018</span></h2>
+									  <p>Developed automatic language localization scripts in BASH and Python which translated SmartRG's User Interface in 20+ new languages. Also created a network packet capture interface for SmartRG's router UI with AngularJS and Cloudshark.
+									  </p>
+								   </div>
+								</div>
+							 </article>
+
+							 <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+								<div class="timeline-entry-inner">
+								   <div class="timeline-icon color-none">
+								   </div>
+								</div>
+							 </article>
+						  </div>
 					   </div>
 				   </div>
 				</div>
 			</section>
 
-			<section class="colorlib-work" data-section="work">
+			<section class="colorlib-work" data-section="showcase" id="showcase">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -1067,7 +1080,7 @@
 			</section>
 
 			<!------------------------------- PHOTO GALLERY SECTION BEGIN ---------------------------->
-			<section class="colorlib-photos" data-section="photos">
+			<section class="colorlib-photos" data-section="photos" id="photos">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -1079,19 +1092,19 @@
 					<div class="wrapper">
 						<div class="media">
 							<div class="layer">
-							    <p class="photo-caption">SB Hacks Team 🌊</p>
+								<p class="photo-caption">SB Hacks Team 🌊</p>
 							 </div>
 							<img class="photo-gallery-slide" src="images/photogallery/sbhacksteam.jpg" alt="" />
 						</div>
 						<div class="media">
 							<div class="layer">
-							    <p class="photo-caption">IEEE AI Hacks!</p>
+								<p class="photo-caption">IEEE AI Hacks!</p>
 							  </div>
 							<img class="photo-gallery-slide" src="images/photogallery/ieeehacks.jpg" alt="" />
 						</div>
 						<div class="media">
 							<div class="layer">
-							    <p class="photo-caption">Caught eating chocolate...</p>
+								<p class="photo-caption">Caught eating chocolate...</p>
 							</div>
 							<img  class="photo-gallery-slide"src="images/photogallery/ieeehackschocolate.jpg" alt="" />
 						</div>
@@ -1101,19 +1114,19 @@
 					<div class="wrapper">
 						<div class="media">
 							<div class="layer">
-							    <p class="photo-caption">Mineyeeter</p>
+								<p class="photo-caption">Mineyeeter</p>
 							</div>
 							<img  class="photo-gallery-slide"src="images/photogallery/hacksc.jpg" alt="" />
 						</div>
 						<div class="media">
 							<div class="layer">
-							    <p class="photo-caption">HackSC Sorority Squat</p>
+								<p class="photo-caption">HackSC Sorority Squat</p>
 							 </div>
 							<img class="photo-gallery-slide" src="images/photogallery/hacksc2.jpg" alt="" />
 						</div>
 						<div class="media">
 							<div class="layer">
-							    <p class="photo-caption">SLO Hacks!</p>
+								<p class="photo-caption">SLO Hacks!</p>
 							  </div>
 							<img class="photo-gallery-slide" src="images/photogallery/slohacks.jpeg" alt="" />
 						</div>
@@ -1125,7 +1138,7 @@
 		
 
 		<!--footer>
-			<p>Made on github with colorlib.com template</p>
+			<p>Remixed Jackson colorlib template https://colorlib.com/wp/template/jackson/ by Jayleen Li</p>
 		</footer-->
 		</div><!-- end:colorlib-main -->
 	</div><!-- end:container-wrap -->
@@ -1152,4 +1165,3 @@
 
 	</body>
 </html>
-
