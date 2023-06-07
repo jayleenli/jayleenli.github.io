@@ -1657,6 +1657,56 @@ body.offcanvas {
   margin: 17.5px;
 }
 
+.spreadsheet-box {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: flex;
+  padding: 1.5em;
+  margin-top: 5px;
+  border: 1px solid #e6e6e6 !important; 
+}
+
+.spreadsheet-box:hover {
+  background-color: #dcf5ff !important;
+  border: 1px solid #4f68c6c2 !important; 
+}
+
+.spreadsheet-icon {
+  width: 100px;
+  /*margin: auto;*/
+  height: 100px;
+  /*padding: 15px;*/
+  border-style: solid;
+  border-color: #a6a6a6c2;
+  border-width: 2px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px #dedede;
+}
+
+.spreadsheet-center-icon {
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  margin: 20px 22px;
+  text-align: center;
+}
+
+.spreadsheet-box-outer {
+  color: rgba(0, 0, 0, 0.7) !important;
+  background-color: #f1f1f1;
+}
+
+.spreadsheet-text-box {
+  /*width: calc(100% - 150px);*/
+  position: relative;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+
 
 /*@media (max-width: 600px) {
     .wrapper {
