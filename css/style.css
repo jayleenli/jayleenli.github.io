@@ -1707,6 +1707,81 @@ body.offcanvas {
   margin-right: 8px;
 }
 
+.art-social-icons-div {
+  /*display: inline-block;*/
+  text-align:center;
+}
+
+.art-social-icons-floating-blurb {
+  color:#666;
+  position:absolute;
+  font-family:sans-serif;
+  bottom:0;
+  left:-10px;
+  right:-10px;
+  padding:5px 7px;
+  z-index:-1;
+  font-size:16px;
+  border-radius:2px;
+  background:#ececec;
+  visibility:hidden;
+  opacity:0;
+  -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* pop-up text arrow */
+.art-social-icons-floating-blurb:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #ececec;
+  position:absolute;
+  bottom:-5px;
+  left:55px;
+}
+
+/* text pops up when icon is in hover state */
+.art-social-icons-floating-link:hover span {
+  bottom:120px;
+  visibility:visible;
+  opacity:1;
+}
+
+.art-social-icons-floating-link {
+  color:#fff;
+  background: #81a9b6;
+  border-radius:25px;
+  text-align:center;
+  text-decoration:none;
+  position: relative;
+  display: inline-block;
+  width:100px;
+  height:100px;
+  margin:0 20px;
+  -o-transition:all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+   -webkit-font-smoothing: antialiased;
+}
+
+.art-social-icons-floating-link:hover {
+  background: #a1daed;
+  color: #fff !important;
+}
+
+.art-social-icon {
+  font-size: 70px;
+  display: inline-block;
+  text-align: center;
+  margin: 15px;
+}
+
 
 /*@media (max-width: 600px) {
     .wrapper {
