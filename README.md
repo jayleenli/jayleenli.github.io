@@ -1,4 +1,4 @@
 # jayleenli.github.io
-Personal website
+Personal website source files
 
-[Direct Link](https://jayleenli.github.io/ "Website")
+[For the direct link, click here](https://jayleenli.github.io/ "Website")
