@@ -326,8 +326,8 @@ function makeActive1()
 	$(".showcase-show").addClass('showcase-hide');
 	$(".showcase-show").removeClass('showcase-show');
 
-	$("#showcase-recent").removeClass('showcase-hide');
-	$("#showcase-recent").addClass('showcase-show');
+	$("#showcase-featured").removeClass('showcase-hide');
+	$("#showcase-featured").addClass('showcase-show');
 }
 function makeActive2()
 {

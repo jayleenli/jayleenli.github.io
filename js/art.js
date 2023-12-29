@@ -1,4 +1,23 @@
 /* Load table data from JSON file and then populate table */
+
+//TODO convert all string to string interpolation
+
+/* Maps */
+var date_order = {
+  "Jan": 0,
+  "Feb": 1,
+  "Mar": 2,
+  "Apr": 3,
+  "May": 4,
+  "Jun": 5,
+  "Jul": 6,
+  "Aug": 7,
+  "Sep": 8,
+  "Oct": 9,
+  "Nov": 10,
+  "Dec": 11
+};
+
 function createLinks(obj) {
 	var links = [];
 	for (const [key, value] of Object.entries(obj)) {
@@ -33,24 +52,11 @@ function calculateDateRank(date_string) {
 	if (date_string === undefined || date_string === null || date_string.trim() === '') {
 		return 0;
 	}
-	var order = {
-	    "Jan": 0,
-	    "Feb": 1,
-	    "Mar": 2,
-	    "Apr": 3,
-	    "May": 4,
-	    "Jun": 5,
-	    "Jul": 6,
-	    "Aug": 7,
-	    "Sep": 8,
-	    "Oct": 9,
-	    "Nov": 10,
-	    "Dec": 11
-	};
+	
 	var year = Number(date_string.slice(-4));
 	var month = date_string.substring(0, 3);
 
-	return (year-2020)*12 + order[month];
+	return (year-2020)*12 + date_order[month];
 }
 
 // /* Test data locally. */ 
