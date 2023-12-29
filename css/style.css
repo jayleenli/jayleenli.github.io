@@ -1782,6 +1782,34 @@ body.offcanvas {
   margin: 15px;
 }
 
+/* table css from https://codepen.io/geoffyuen/pen/DZxEKy */
+
+.rwd-table {
+  background: #4a7198;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  tr {
+    border-color: lighten(#4a7198, 10%);
+  }
+  th, td {
+    margin: .5em 1em;
+    @media (min-width: 480px) { 
+      padding: 1em !important; 
+    }
+  }
+  th, td:before {
+    color: #f6f8a9;
+  }
+  a {
+    color: #70ff79;
+    text-decoration: underline;
+  }
+}
+
+
+/* table css end */
+
 
 /*@media (max-width: 600px) {
     .wrapper {

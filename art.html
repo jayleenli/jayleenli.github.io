@@ -42,6 +42,10 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<!-- Morris Donut Chart -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -77,7 +81,7 @@
 						<li><a href="index.html#photos" class="external" data-nav-section="photos" style="font-size: 16px;">Photos</a></li>
 						<hr width="50%" class="navbar-divider" align="center">
 						<li><a href="publications.html" target="_self" class="external" style="font-size: 16px;">"Publications"</a></li>
-						<li><a href="art.html" target="_self" class="external active-nav-external" style="font-size: 16px;">3D Art (WIP)</a></li>
+						<li><a href="art.html" target="_self" class="external active-nav-external" style="font-size: 16px;">3D Art</a></li>
 						<li><a href="spreadsheets.html" target="_self" class="external" style="font-size: 16px;">Spreadsheets</a></li>
 						
 					</ul>
@@ -101,7 +105,7 @@
 					<div class="animate-box" data-animate-effect="fadeInLeft">
 						<div class="external-heading-child">
 							<h2 class="colorlib-heading-side-page animate-box">3D Art</h2>
-							<p>After taking a graduate course in computational fabrication for fun and with the pandemic happening, I picked up making  3D art as a hobby. This is a page to showcase the projects I have made and my journey into different subfields of making 3D things! </p>
+							<p>After taking a graduate course in computational fabrication for fun and with the pandemic happening, I picked up making  3D art as a hobby. This is a page to showcase the projects I have made and my journey into different subfields of making 3D things! Project list starts from 2020 and onwards.</p>
 						</div>
 						<div class="external-icon-aside-box">
 							<br style="line-height: 1;"/>
@@ -121,36 +125,35 @@
 				<hr/>
 				</div>
 			</div>
+
+<!-- 			<table style="width:100%">
+						  <tr>
+							<th style="width:15%" class="publications-th">2023</th>
+						  </tr> 
+
+						  <tr>
+							<td>Nov 2023</td>
+							<td><a class="publication-link" href="https://docs.google.com/presentation/d/1lKS73hmjqX3nlRICiXABoOH6SV9_tjpFx38WN-_jsO4/edit#slide=id.p" target="_blank"> Cloud IAM Chronicles: Guardians of the Cloud & Understanding Cyber Rascals.</a><i> Cisco Women in Cybersecurity Summit.</i></td>
+						  </tr>
+
+						</table> -->
+
+						<div><center><h2 id="art-total-viz">Total Projects Listed: </h2></center></div>
+
+						<div id="art-donut-viz"></div>
+
+						<table id="artTable" class="rwd-table sortable" style="width:80%; margin: auto;">
+						  <tr>
+						    <th>Date Started</th>
+						    <th>Date Completed</th>
+						    <th>Project</th>
+						    <th>Category</th>
+						    <th>Links</th>
+						  </tr>
+						</table>
+
+
 		</section>
-
-
-
-<!-- 		<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg.JPG);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
-				<div class="colorlib-narrow-content">
-					<div class="row">
-					</div>
-					<div class="row">
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="278" data-speed="4000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Cups of Coffee</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="20" data-speed="4250" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Hackathons</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="25" data-speed="4500" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Projects</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="9" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Subfields explored</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 
 	</div>
@@ -169,9 +172,15 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
+	<!-- Morris Donute Chart JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+	<!-- Sortable Tables by https://www.kryogenix.org/code/browser/sorttable/-->
+	<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 	
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script src="js/art.js"></script>
 	</body>
 	</html>
