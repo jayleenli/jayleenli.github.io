@@ -57,41 +57,32 @@ function calculateDateRank(date_string) {
 	return (year-2020)*12 + date_order[month];
 }
 
-// /* Test data locally. */ 
-// var json_test = [insert data here];
+var table_items = [];
+var categories_totals = {};
 
-// Insert the endpoint code here
-
-// /* Test data locally end. */ 
-
-// Real data hitting endpoint
-$.getJSON("https://jayleenli.github.io/data/art_projects.json", function( data ) {
-	var table_items = [];
-	var categories_totals = {};
-
-	data.forEach(function(item) {
-		if (item["category"] in categories_totals) {
-				categories_totals[item["category"]] = categories_totals[item["category"]] + 1;
-			} else {
-				categories_totals[item["category"]] = 1;
-			}
-		    table_items.push(`<tr>`);
-		    table_items.push(`<td sorttable_customkey='${calculateDateRank(item["date_started"])}'>${item["date_started"]}</td>`);
-		    table_items.push(`<td sorttable_customkey='${calculateDateRank(item["date_completed"])}'>${item["date_completed"]}</td>`);
-		    table_items.push(`<td>${item["project"]}</td>`);
-		    table_items.push(`<td>${item["category"]}</td>`);
-		    table_items.push(`<td>${createLinks(item["links"]).join(", ")}</td>`);
-		    table_items.push(`</tr>`);
-	});
-
-	$( "#artTable" ).append(table_items.join(""));
-
-	/* Morris Donut JS for Art Page */
-	Morris.Donut({
-	  element: 'art-donut-viz',
-	  data: create_morris_donut_labels(categories_totals)
-	});
-
-	/* Total Count */
-	$( "#art-total-viz" ).text(`Total Projects Listed: ${count_overall_total(categories_totals)}`);
+art_projects_json.forEach(function(item) {
+	if (item["category"] in categories_totals) {
+			categories_totals[item["category"]] = categories_totals[item["category"]] + 1;
+		} else {
+			categories_totals[item["category"]] = 1;
+		}
+	    table_items.push(`<tr>`);
+	    table_items.push(`<td sorttable_customkey='${calculateDateRank(item["date_started"])}'>${item["date_started"]}</td>`);
+	    table_items.push(`<td sorttable_customkey='${calculateDateRank(item["date_completed"])}'>${item["date_completed"]}</td>`);
+	    table_items.push(`<td>${item["project"]}</td>`);
+	    table_items.push(`<td>${item["category"]}</td>`);
+	    table_items.push(`<td>${createLinks(item["links"]).join(", ")}</td>`);
+	    table_items.push(`</tr>`);
 });
+
+$( "#artTable" ).append(table_items.join(""));
+sorttable.makeSortable(document.getElementById('artTable'));
+
+/* Morris Donut JS for Art Page */
+Morris.Donut({
+  element: 'art-donut-viz',
+  data: create_morris_donut_labels(categories_totals)
+});
+
+/* Total Count */
+$( "#art-total-viz" ).text(`Total Projects Listed: ${count_overall_total(categories_totals)}`);

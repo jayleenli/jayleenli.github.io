@@ -1,4 +1,4 @@
-[
+var art_projects_json = [
 	{
 		"date_started": "Nov 2023",
 		"date_completed": "",
@@ -55,9 +55,9 @@
 		}
 	},
 	{
-		"date_started": "Aug 2023",
+		"date_started": "Jul 2023",
 		"date_completed": "Aug 2023",
-		"project": "Gen 4 Start Pokemon Festival Kandis",
+		"project": "Gen 4 Starter Pokemon Festival Kandis",
 		"category": "Perler Beads",
 		"links": {
 			"Instagram": "https://www.instagram.com/p/CvTyhhROBMl/"
@@ -305,4 +305,4 @@
 			"Instagram": "https://www.instagram.com/p/CDTLpcjjrBY/"
 		}
 	}
-]
+];

@@ -1,4 +1,4 @@
-[
+var project_showcase_json = [
 	{
 		"project_name": "Public Profile Privacy Review",
 		"subheader": "2nd Place Winner at PANW hackathon 2020",
@@ -83,7 +83,6 @@
         "featured": true,
         "links": {
             "Website": "https://www.sbhacks.com/",
-            "Live Site": "https://www.sbhacks.com/live",
             "Youtube": "https://www.youtube.com/channel/UCtTj0HfH5Q3WgrFb-ht1lNQ"
         }
     },
@@ -440,4 +439,4 @@
             "Github": "https://github.com/jayleenli/Find-Steam-Booster-Pack-Loopholes"
         }
     }
-]
+];
