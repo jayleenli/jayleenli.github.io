@@ -159,7 +159,7 @@ function calculateDateRank(date_string) {
 // /* Test data locally end. */ 
 
 // Real data hitting endpoint
-$.getJSON( "https://jayleenli.github.io/js/art_projects.json", function( data ) {
+$.getJSON( "https://jayleenli.github.io/data/art_projects.json", function( data ) {
 	var table_items = [];
 	var categories_totals = {};
 
@@ -189,17 +189,3 @@ $.getJSON( "https://jayleenli.github.io/js/art_projects.json", function( data ) 
 	/* Total Count */
 	$( "#art-total-viz" ).text("Total Projects Listed: " + count_overall_total(categories_totals));
 });
-
-
-// fetch('/art_projects.json')
-//   .then(response => response.text())
-//   .then((data) => {
-//     console.log(data)
-//   })
-
-// var client = new XMLHttpRequest();
-// client.open('GET', 'https://jayleenli.github.io/js/main.js');
-// client.onreadystatechange = function() {
-//   alert(client.responseText);
-// }
-// client.send();
