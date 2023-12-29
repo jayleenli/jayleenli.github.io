@@ -65,7 +65,7 @@ function calculateDateRank(date_string) {
 // /* Test data locally end. */ 
 
 // Real data hitting endpoint
-$.getJSON( "https://jayleenli.github.io/data/art_projects.json", function( data ) {
+$.getJSON("https://jayleenli.github.io/data/art_projects.json", function( data ) {
 	var table_items = [];
 	var categories_totals = {};
 

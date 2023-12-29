@@ -105,35 +105,35 @@ function createColumns(project_items_list) {
 /* Test data locally end. */ 
 
 // Real data hitting endpoint
-$.getJSON( "https://jayleenli.github.io/data/project_showcase.json", function( data ) {
+$.getJSON("https://jayleenli.github.io/data/project_showcase.json", function( data ) {
 	var featured_items = [];
 	var hackathon_items = [];
 	var leadership_involvement_items = [];
 	var personal_items = [];
 
-	json_test.forEach(function(item) {
+	data.forEach(function(item) {
 		var item_html = [];
 		item_html.push(`<div class='services ${determineColor(item["category"])}'><div class='blog-entry'>`)
 		item_html.push(createImageHeader(item["links"]["href"], item["img_src"], item["img_alt_text"]));
-	  item_html.push(`<div class="desc">`);
-	  item_html.push(createTitle(item["links"]["href"], item["project_name"], item["subheader"]));
-	  item_html.push(`<p>${item["description_html"]}</p>`);
-	  item_html.push(`<span>`);
-	  item_html.push(createLinks(item["links"]));
-	  item_html.push(createDateFooter(item["date"]));
-	  item_html.push(`</span>`);
-	  item_html.push("</div></div></div>");
+		item_html.push(`<div class="desc">`);
+		item_html.push(createTitle(item["links"]["href"], item["project_name"], item["subheader"]));
+		item_html.push(`<p>${item["description_html"]}</p>`);
+		item_html.push(`<span>`);
+		item_html.push(createLinks(item["links"]));
+		item_html.push(createDateFooter(item["date"]));
+		item_html.push(`</span>`);
+		item_html.push("</div></div></div>");
 
-	  if (item["featured"] === true) {
-	  	featured_items.push(item_html.join(""));
-	  }
-	  switch (item["category"]) {
-	  	case "hackathon": hackathon_items.push(item_html.join("")); break;
-	  	case "leadership_involvement": leadership_involvement_items.push(item_html.join("")); break;
-	  	case "personal": personal_items.push(item_html.join("")); break;
-	  	default:
-	  		console.error("unhandled type");
-	  }
+		if (item["featured"] === true) {
+			featured_items.push(item_html.join(""));
+		}
+		switch (item["category"]) {
+			case "hackathon": hackathon_items.push(item_html.join("")); break;
+			case "leadership_involvement": leadership_involvement_items.push(item_html.join("")); break;
+			case "personal": personal_items.push(item_html.join("")); break;
+			default:
+				console.error("unhandled type");
+		}
 	});
 
 	$( "#showcase-featured" ).append(createColumns(featured_items));
