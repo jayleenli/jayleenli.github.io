@@ -84,13 +84,13 @@ function createColumns(project_items_list) {
 	var divided_project_section = [];
 	const group_count = Math.ceil(project_items_list.length/3.0);
 	
-	divided_project_section.push(`<div class='col-md-4 animate-box' data-animate-effect='fadeInLeft'>`);
+	divided_project_section.push(`<div class='col-md-4'>`);
 	divided_project_section.push(project_items_list.slice(0, group_count));
 	divided_project_section.push(`</div>`);
-	divided_project_section.push(`<div class='col-md-4 animate-box' data-animate-effect='fadeInLeft'>`);
+	divided_project_section.push(`<div class='col-md-4'>`);
 	divided_project_section.push(project_items_list.slice(group_count, group_count*2));
 	divided_project_section.push(`</div>`);
-	divided_project_section.push(`<div class='col-md-4 animate-box' data-animate-effect='fadeInLeft'>`);
+	divided_project_section.push(`<div class='col-md-4'>`);
 	divided_project_section.push(project_items_list.slice(group_count*2, project_items_list.length));
 	divided_project_section.push(`</div>`);
 
@@ -102,7 +102,7 @@ function createColumns(project_items_list) {
 
 // Insert the endpoint code here
 
-/* Test data locally end. */ 
+// /* Test data locally end. */ 
 
 // Real data hitting endpoint
 $.getJSON("https://jayleenli.github.io/data/project_showcase.json", function( data ) {
