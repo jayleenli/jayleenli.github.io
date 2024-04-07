@@ -1,8 +1,17 @@
 var art_projects_json = [
 	{
+		"date_started": "Feb 2024",
+		"date_completed": "Feb 2024",
+		"project": "BART Sailing The Seas",
+		"category": "Acrylic Paint",
+		"links": {
+			"Instagram": "https://www.instagram.com/p/C3dVfgPPF7f/"
+		}
+	},
+	{
 		"date_started": "Nov 2023",
 		"date_completed": "",
-		"project": "TBA - Steampunk + Celtic + Magic ??? ",
+		"project": "TBA - Steampunk + Celtic + Magic ???",
 		"category": "3D Print",
 		"links": {
 		}
