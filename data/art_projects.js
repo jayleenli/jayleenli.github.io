@@ -1,5 +1,22 @@
 var art_projects_json = [
 	{
+		"date_started": "Jun 2024",
+		"date_completed": "Jun 2024",
+		"project": "Bart Earrings",
+		"category": "Resin",
+		"links": {
+			"Instagram": "https://www.instagram.com/p/C8NcxloSaYX/"
+		}
+	},
+	{
+		"date_started": "Jun 2024",
+		"date_completed": "Jun 2024",
+		"project": "Espeon, Sylveon, Milotic Festival Kandis",
+		"category": "Perler Beads",
+		"links": {
+		}
+	},
+	{
 		"date_started": "Feb 2024",
 		"date_completed": "Feb 2024",
 		"project": "BART Sailing The Seas",
@@ -10,10 +27,14 @@ var art_projects_json = [
 	},
 	{
 		"date_started": "Nov 2023",
-		"date_completed": "",
-		"project": "TBA - Steampunk + Celtic + Magic ???",
+		"date_completed": "Jul 2024",
+		"project": "Mystic Gear Box",
 		"category": "3D Print",
 		"links": {
+			"YouTube": "https://www.youtube.com/watch?v=r_4xlFbgFpk",
+			"Thingiverse (main file - links to other ones in description)": "https://www.thingiverse.com/thing:6707364",
+			"Instructables": "https://www.instructables.com/Mystic-Gear-Box-Wall-Art/",
+			"Instagram": "https://www.instagram.com/p/C90jNtISbWc/"
 		}
 	},
 	{
