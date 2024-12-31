@@ -1,4 +1,32 @@
 var publications_list_json = {
+    "2025": [
+        {
+            "publication_name": "wtf do DJs actually do?",
+            "subtext": "Personal Presenation for Presentation Nite #2 I hosted for my friends.",
+            "date": "Jan 2025",
+            "link": "https://docs.google.com/presentation/d/1iP8mT7mlTzp8VioEazgHLsBTbNSVF9XCFLxug3S2g2c/edit?usp=sharing"
+        }
+    ],
+    "2024": [
+        {
+            "publication_name": "EDM Genealogy and EDM Subgenres.",
+            "subtext": "Personal Presenation for Presentation Nite #1 I hosted for my friends.",
+            "date": "Nov 2024",
+            "link": "https://docs.google.com/presentation/d/1jFLiFRkXEqaikNY5aE6esx6-SNnmdmLStZw38qRrVkY/edit?usp=sharing"
+        },
+        {
+            "publication_name": "On \“Missed Communication\”.",
+            "subtext": "Personal Medium Article about Communication Styles and Human Behavior.",
+            "date": "Oct 2024",
+            "link": "https://medium.com/@jayleen_li/on-missed-communication-3e5b3044cc06"
+        },
+        {
+            "publication_name": "3D printing 101!",
+            "subtext": "Presentation for middle schoolers done as part of volunteering for Envisioneers.",
+            "date": "Oct 2024",
+            "link": "https://docs.google.com/presentation/d/13w0ivy99nofuwJYV09Dh0ybcYK-c5ul_D6EZ0nj1bbo/edit?usp=sharing"
+        }
+    ],
     "2023": [
     	{
     		"publication_name": "Cloud IAM Chronicles: Guardians of the Cloud & Understanding Cyber Rascals.",
@@ -6,6 +34,14 @@ var publications_list_json = {
     		"date": "Nov 2023",
     		"link": "https://docs.google.com/presentation/d/1lKS73hmjqX3nlRICiXABoOH6SV9_tjpFx38WN-_jsO4/"
     	}
+    ],
+    "2022": [
+        {
+            "publication_name": "PROVIDING IDENTITY PROTECTION.",
+            "subtext": "US Patent 20240154986. Issued May 9, 2024.",
+            "date": "Nov 2022",
+            "link": "https://patents.justia.com/patent/20240154986"
+        }
     ],
     "2021": [
     	{

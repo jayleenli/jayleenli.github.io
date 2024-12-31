@@ -77,6 +77,7 @@ art_projects_json.forEach(function(item) {
 
 $( "#artTable" ).append(table_items.join(""));
 sorttable.makeSortable(document.getElementById('artTable'));
+$("#dateCompletedArtTable").click(); //Auto sorted descending
 
 /* Morris Donut JS for Art Page */
 Morris.Donut({
