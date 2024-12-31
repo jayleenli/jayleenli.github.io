@@ -438,5 +438,18 @@ var project_showcase_json = [
         "links": {
             "Github": "https://github.com/jayleenli/Find-Steam-Booster-Pack-Loopholes"
         }
+    },
+    {
+        "project_name": "3D Printing Instructor for Envisioneers",
+        "subheader": "",
+        "date": "Oct 2024 - Nov 2024",
+        "img_src": "images/envisioneers.webp",
+        "img_alt_text": "3D printing volunteering",
+        "description_html": "Teaching underrepresented middle schoolers at an afterschool program at William Sheppard Middle School in San Jose, California.",
+        "category": "personal",
+        "featured": false,
+        "links": {
+            "presentation": "https://docs.google.com/presentation/d/13w0ivy99nofuwJYV09Dh0ybcYK-c5ul_D6EZ0nj1bbo/edit?usp=sharing"
+        }
     }
 ];
