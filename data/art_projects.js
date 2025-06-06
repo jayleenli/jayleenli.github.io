@@ -1,5 +1,53 @@
 var art_projects_json = [
 	{
+		"date_started": "Jun 2025",
+		"date_completed": "Jun 2025",
+		"project": "Meandering - Screws and Bolts",
+		"category": "3D Print",
+		"links": {
+			"Instagram": "https://www.instagram.com/p/DKc6zqShkhO/",
+			"YouTube": "https://www.youtube.com/watch?v=YreDdoQutAg",
+			"Thingiverse": "https://www.thingiverse.com/thing:7058710",
+			"MakerWorld": "https://makerworld.com/en/models/1493645-wall-art-meandering-screws-and-bolts",
+		}
+	},
+	{
+		"date_started": "Jun 2025",
+		"date_completed": "Jun 2025",
+		"project": "Meandering - Gears",
+		"category": "3D Print",
+		"links": {
+			"Instagram": "https://www.instagram.com/p/DKc6ajGhw33/",
+			"YouTube": "https://www.youtube.com/watch?v=YreDdoQutAg",
+			"Thingiverse": "https://www.thingiverse.com/thing:7058710",
+			"MakerWorld": "https://makerworld.com/en/models/1493612-wall-art-meandering-gears",
+		}
+	},
+	{
+		"date_started": "May 2025",
+		"date_completed": "May 2025",
+		"project": "Momentary",
+		"category": "3D Print",
+		"links": {
+			"Instagram": "https://www.instagram.com/p/DJrstR2PCYS/",
+			"YouTube": "https://www.youtube.com/watch?v=YreDdoQutAg",
+			"Thingiverse": "https://www.thingiverse.com/thing:7058710",
+			"MakerWorld": "https://makerworld.com/en/models/1493603-steampunk-doorframe-decor-momentary",
+		}
+	},
+	{
+		"date_started": "Dec 2024",
+		"date_completed": "Jan 2025",
+		"project": "Cognizant",
+		"category": "3D Print",
+		"links": {
+			"Instagram": "https://www.instagram.com/p/DFEti9zpEL5/",
+			"YouTube": "https://www.youtube.com/watch?v=67AKAb9H3hA",
+			"Thingiverse": "https://www.thingiverse.com/thing:6927342",
+			"MakerWorld": "https://makerworld.com/en/models/1039306-cognizant-kinetic-sculpture",
+		}
+	},
+	{
 		"date_started": "Jun 2024",
 		"date_completed": "Jun 2024",
 		"project": "Bart Earrings",

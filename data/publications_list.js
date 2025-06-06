@@ -5,6 +5,12 @@ var publications_list_json = {
             "subtext": "Personal Presenation for Presentation Nite #2 I hosted for my friends.",
             "date": "Jan 2025",
             "link": "https://docs.google.com/presentation/d/1iP8mT7mlTzp8VioEazgHLsBTbNSVF9XCFLxug3S2g2c/edit?usp=sharing"
+        },
+        {
+            "publication_name": "Cool Board Game Mechanisms",
+            "subtext": "Personal Presenation for a friends presentation nite.",
+            "date": "Jun 2025",
+            "link": "https://docs.google.com/presentation/d/1IxLzJKLwaj1_O6oaUNKAs-a4s1bDQpaMxxDC7d0Q_u0/edit?usp=sharing"
         }
     ],
     "2024": [

@@ -1795,9 +1795,14 @@ body.offcanvas {
   border-radius: .4em;
   overflow: hidden;
   tr {
+    border: 1px solid white;
     border-color: lighten(#4a7198, 10%);
   }
+  td {
+    /*border: 1px solid white;*/
+  }
   th, td {
+    /*border: 1px solid white;*/
     margin: .5em 1em;
     @media (min-width: 480px) { 
       padding: 1em !important; 
