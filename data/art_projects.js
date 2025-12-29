@@ -1,5 +1,24 @@
 var art_projects_json = [
 	{
+		"date_started": "Sep 2025",
+		"date_completed": "Sep 2025",
+		"project": "MakerFaire 2025 display with NoiseBridge Hackerspace",
+		"category": "Display",
+		"links": {
+			"Instagram": "https://www.instagram.com/p/DPhwn7RkuN8/",
+		}
+	},
+	{
+		"date_started": "Sep 2025",
+		"date_completed": "Sep 2025",
+		"project": "5inx7in Print Frames",
+		"category": "3D Print",
+		"links": {
+			"Instagram": "https://www.instagram.com/p/DPFQ2wHEkDD/",
+			"Etsy": "https://www.etsy.com/shop/cheeseturtlemakes/",
+		}
+	},
+	{
 		"date_started": "Jun 2025",
 		"date_completed": "Jun 2025",
 		"project": "Meandering - Screws and Bolts",
