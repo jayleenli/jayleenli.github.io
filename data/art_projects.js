@@ -1,5 +1,15 @@
 var art_projects_json = [
 	{
+		"date_started": "Oct 2025",
+		"date_completed": "Mar 2026",
+		"project": "Clair Obscur: Expedition 33 Charnon Scythe Recreation",
+		"category": "3D Print",
+		"links": {
+			"Instagram": "https://www.instagram.com/p/DWbqgPjFtEI/",
+			"Youtube": "https://www.youtube.com/watch?v=mCWRQRzRp3M",
+		}
+	},
+	{
 		"date_started": "Sep 2025",
 		"date_completed": "Sep 2025",
 		"project": "MakerFaire 2025 display with NoiseBridge Hackerspace",
