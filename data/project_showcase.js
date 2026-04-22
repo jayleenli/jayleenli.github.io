@@ -451,5 +451,18 @@ var project_showcase_json = [
         "links": {
             "presentation": "https://docs.google.com/presentation/d/13w0ivy99nofuwJYV09Dh0ybcYK-c5ul_D6EZ0nj1bbo/edit?usp=sharing"
         }
+    },
+    {
+        "project_name": "Cloud IAM Rascal Cisco Cybersecurity Talk",
+        "subheader": "",
+        "date": "Nov 2023",
+        "img_src": "images/cwics.PNG",
+        "img_alt_text": "Fun talk done for Cisco",
+        "description_html": "Fun talk on IAM done for Cisco Women in Cybersecurity!",
+        "category": "personal",
+        "featured": false,
+        "links": {
+            "Presentation": "https://docs.google.com/presentation/d/1lKS73hmjqX3nlRICiXABoOH6SV9_tjpFx38WN-_jsO4/edit"
+        }
     }
 ];
