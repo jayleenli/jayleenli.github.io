@@ -1,4 +1,12 @@
 var publications_list_json = {
+    "2026": [
+        {
+            "publication_name": "Potato Journey",
+            "subtext": "My friend hosted a fun create a new potato dish challenge and this is the recipe",
+            "date": "Jun 2026",
+            "link": "docs/PotatoJourney.html"
+        }
+    ],
     "2025": [
         {
             "publication_name": "wtf do DJs actually do?",
